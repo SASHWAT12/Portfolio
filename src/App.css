@@ -8,38 +8,58 @@
 .footerArea {
   background-color: #813e00;
   display: flex;
-  justify-content: space-between; /* Space out content on the left and image on the right */
-  align-items: center;            /* Center content vertically */
+  flex-direction: column; /* Stack mainContent and footerText vertically */
+  align-items: center;
   width: 100%;
-  max-width: 100%;
   padding: 20px;
-  min-height: 50vh;              /* Make footer area fill the viewport height */
-  margin-top: auto;
   box-sizing: border-box;
 }
 
+.footerContent {
+  display: flex;
+  flex-direction: row; /* Place ProfileContent and profilePhoto side by side */
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+}
 .ProfileContent {
-  color: #FEF4F2;
+  position: relative;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  align-items: flex-start; /* Align content to the left */
+  text-align: left;        /* Ensure text is left-aligned */
+  color: #FEF4F2;
   padding: 20px;
+  margin-left: -100px;
   max-width: 50%;
+}
+
+.ProfileContent a{
+  padding-top: 25px;
 }
 
 .profilePhoto {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;                   /* Optional: Set a fixed width */
-  height: 200px;                  /* Optional: Set a fixed height */
+  flex-direction: column;
+  margin-right: -60px;
+}
+
+.licensePara {
+  text-align: center;
+  color: #FEF4F2;
+  margin-top: 40px;
+  margin-bottom: -25px;
+  font-size: 1.2rem;
 }
 
 .profilePhoto img {
-  width: 100%;                    /* Make the image fill the container */
-  height: 100%;                   /* Maintain the image aspect ratio */
+  width: 250px;                    /* Set a fixed width */
+  height: 250px;                   /* Set a fixed height to maintain aspect ratio */
   border: 2.5px solid #f87474;
   border-radius: 50%;
+  object-fit: cover;               /* Ensures the image fills the dimensions without distortion */
+  max-width: 100%;                 /* Prevents the image from overflowing if the container is smaller */
 }
 
 
@@ -54,11 +74,11 @@
 .linksImage img {
   height: 35px;
   width: 35px;
-  margin-right: 20px; /* Adds spacing between the icons */
+  margin-right: 35px; /* Adds spacing between the icons */
   object-fit: cover;
 }
 
-.myResume {
+.myResume a{
   margin-top: 20px;
   display: inline-block;
   text-decoration: none;
@@ -72,7 +92,7 @@
   /* transition: background .5s, border 0.5s, color 0.5s ease-in-out; Add a 0s transition for the specified properties */
 }
 
-.myResume:hover {
+.myResume a:hover {
   background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%); /* Add your desired gradient colors */
   color: white;
   font-weight: 600;

@@ -1,29 +1,34 @@
 import React from "react";
-import { SocialMedia,resumeLink,PassportImage } from "../Assets";
+import { SocialMedia,resumeLink,PassportImage,aboutMe } from "../Assets";
 
 const ContactMe = () =>(
     <div className="footerArea">
-        <div className="ProfileContent">
-            <div>
-            <h2>Sashwat P</h2>
-            <p>WEB Developer | React.js, MERN Stack | Senior Executive @ _VOIS</p>
+        <div className="footerContent">
+            <div className="ProfileContent">
+                <div>
+                <h2>{aboutMe.name}</h2>
+                <p>{aboutMe.tagLine}</p>
+                </div>
+                <div className="linksImage">
+                    {SocialMedia.map( (socials) => (
+                        <a href={socials.link}
+                        key={socials.id}
+                        target="_blank"
+                        >
+                            <img src={socials.icon} alt="" />
+                        </a>
+                    ))}
+                </div>
+                <div className="myResume">
+                    <a href={resumeLink} >Download Resume</a>
+                </div>
             </div>
-            <div className="linksImage">
-                {SocialMedia.map( (socials) => (
-                    <a href={socials.link}
-                       key={socials.id}
-                       target="_blank"
-                    >
-                        <img src={socials.icon} alt="" />
-                    </a>
-                ))}
-            </div>
-            <div>
-                <a href={resumeLink} className="myResume" >Download Resume</a>
+            <div className="profilePhoto">
+                <img src={PassportImage} alt="Image"/>
             </div>
         </div>
-        <div className="profilePhoto">
-            <img src={PassportImage} alt="Image"/>
+        <div className="licensePara">
+            <p>{aboutMe.signature}</p>
         </div>
     </div>
 );

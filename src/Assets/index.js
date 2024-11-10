@@ -5,10 +5,14 @@ import Gmailicon from "./GmailIcon.svg";
 import LinkedInIcon from "./LinkedInIcon.svg";
 import TwitterIcon from "./TwitterIcon.svg";
 
-export { PassportImage, githubIcon, Gmailicon, LinkedInIcon, TwitterIcon };
-
+export { PassportImage };
+export const aboutMe = {
+    name: "Sashwat Pashpulate",
+    tagLine: "WEB Developer | React.js, MERN Stack | Senior Executive @ _VOIS",
+    intro: "Software Developer from India who is either busy improving his craft or pondering over the next big idea.",
+    signature: "Made with 💙 by Sashwat Pashpulate"
+}
 export const resumeLink = "https://drive.usercontent.google.com/u/0/uc?id=1U_jHvWHnc22xxzD7OAInBMTo5hiD2srY&export=download";
-
 export const SocialMedia = [
     {
         id:"social1",
