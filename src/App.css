@@ -30,10 +30,10 @@
 
 /* Footer Area */
 .footerArea {
-  background-color: #fef1ef; /* Light pinkish color */
+  background-color: #813e00; /* Light pinkish color */
   display: flex;
   justify-content: space-between; /* Space out content on the left and image on the right */
-  align-items: center; 
+  align-items: flex-start; 
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -49,8 +49,10 @@
 
 /* Profile Content - Text Styling */
 .ProfileContent {
-  align-items: left;
-  justify-content: left;
+  position: relative;
+  color: #FEF4F2;
+  align-items: flex-start;
+  justify-content: flex-start;
   box-sizing: border-box;
   flex-direction: column;
   text-align: left; /* Align text to the left for content */
@@ -59,14 +61,60 @@
 }
 
 /* Profile Photo - Circle Image Styling */
-.profilePhoto img {
-  align-items: center;
-  justify-content: center;  
-  width: 200px;
-  height: 200px;
-  border-width: 15px; /* Increased border width for better visibility */
-  border-color: #f87474; /* Light red color for the border */
-  position: relative;
-  z-index: 10; /* Ensure the image is on top of any other content */
-  border-radius: 50%; /* Circular image */
+.profilePhoto {
+  display: flex;               /* Apply flexbox to the container */
+  justify-content: center;     /* Center the image horizontally */
+  align-items: center;         /* Center the image vertically */
+  width: 200px;                /* Optional: Set a fixed width */
+  height: 200px;               /* Optional: Set a fixed height */
+  position: relative;          /* Relative positioning */
+  z-index: 10;                 /* Ensure the image is on top of any other content */
+  border-radius: 50%;          /* Circular shape */
 }
+
+.profilePhoto img {
+  width: 200px;                /* Set the image width */
+  height: 200px;               /* Set the image height */
+  border-width: 15px;          /* Border width */
+  border-color: #f87474;       /* Border color */
+  border-radius: 50%;          /* Circular image */
+}
+
+.linksImage {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Make icons appear below the text */
+  align-items: flex-start; /* Align icons to the left */
+  margin-top: 20px; /* Spacing between the text and the icons */
+}
+
+.linksImage img {
+  height: 35px;
+  width: 35px;
+  margin-right: 20px; /* Adds spacing between the icons */
+  object-fit: cover;
+}
+
+.myResume {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #F87474;
+  font-size: 1.4rem;
+  padding: 1.2rem 1.6rem;
+  border: .1rem solid #F87474;
+  border-radius: .5rem;
+  background-color: #FEF4F2 !important;
+  /* transition: background .5s, border 0.5s, color 0.5s ease-in-out; Add a 0s transition for the specified properties */
+}
+
+.myResume:hover {
+  background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%); /* Add your desired gradient colors */
+  color: white;
+  font-weight: 600;
+  border: .1rem  solid white;
+  transition: all 1s ease-in-out; 
+  /* Add a 0s transition for the specified properties */ 
+}
+
