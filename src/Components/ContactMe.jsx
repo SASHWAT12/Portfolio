@@ -1,4 +1,5 @@
 import React from "react";
+import './Stylings/ContactMe.css';
 import { SocialMedia,resumeLink,PassportImage,aboutMe } from "../Assets";
 
 const ContactMe = () =>(

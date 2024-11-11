@@ -5,6 +5,7 @@ import Gmailicon from "./GmailIcon.svg";
 import LinkedInIcon from "./LinkedInIcon.svg";
 import TwitterIcon from "./TwitterIcon.svg";
 
+export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
 export { PassportImage };
 export const aboutMe = {
     name: "Sashwat Pashpulate",
