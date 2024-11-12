@@ -11,7 +11,6 @@ function App() {
       {/* This is Header */}
       <header > {/*className="App-header">*/}
         <p>This is Header</p>
-        <LetsConnect />
       </header>
       {/* This is Main */}
       <main>
