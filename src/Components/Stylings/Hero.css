@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* Basic layout */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+    }
+  }
+  
+  /* Left Side: Hero Text */
+  .hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-text {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  .hero-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .hero-greeting {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 80px;
+  }
+  
+  @media (min-width: 640px) {
+    .hero-greeting {
+      font-size: 72px;
+    }
+  }
+  
+  .line-break {
+    display: none;
+  }
+  
+  @media (min-width: 640px) {
+    .line-break {
+      display: block;
+    }
+  }
+  
+  /* Name with Gradient */
+  .hero-name {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    font-style: normal;
+    display: inline-block; /* Ensures inline rendering */
+    margin-top: 1rem; /* Optional: adjust spacing as needed */
+}
+
+.iam-text {
+    color: white; /* White color for "I am" */
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #F26C4F, #F26C4F); /* Solid gradient for name */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+@media (min-width: 640px) {
+    .hero-name {
+        font-size: 68px;
+    }
+}
+  
+  .text-gradient {
+    background: linear-gradient(to right, #F26C4F, #FEF4F2); /* Solid gradient effect */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+  
+  /* Hero Description */
+  .hero-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #b3b3b3; /* Assuming dim white */
+    font-size: 18px;
+    line-height: 30.8px;
+    max-width: 470px;
+    margin-top: 1.25rem;
+  }
+  
+  /* Right Side: Lottie Animation */
+  .hero-animation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 2.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-animation {
+      margin-top: 0;
+    }
+  }
+  
+  .animation-container {
+    position: relative;
+    z-index: 5;
+    height: 90%;
+    width: 85%;
+  }
+  
+  /* Gradient Background */
+  .animation-gradient {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    bottom: 40px;
+    background: radial-gradient(circle, white, transparent);
+  }
+  
+  /* Lets Connect Button Visibility */
+  .lets-connect-large {
+    display: none;
+  }
+  
+  @media (min-width: 640px) {
+    .lets-connect-large {
+      display: block;
+      margin-right: 1rem;
+    }
+  }
+  
+  .lets-connect-small {
+    display: block;
+  }
+  
+  @media (min-width: 640px) {
+    .lets-connect-small {
+      display: none;
+    }
+  }
+  

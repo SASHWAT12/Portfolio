@@ -15,7 +15,7 @@ function App() {
       {/* This is Main */}
       <main>
       This is body
-      <Hero> </Hero>
+      <Hero />
       </main>
       {/* This is footer */}
       <footer>

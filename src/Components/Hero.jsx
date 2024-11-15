@@ -1,11 +1,55 @@
 import React from "react";
+import LetsConnect from "./LetsConnect";
+import Lottie from "react-lottie-player";
+import animationData from "./Lotties/person-coding.json";
+import { aboutMe } from "../Assets";
+import "./Stylings/Hero.css";  // Import the CSS file
 
-function Hero(){
-    return(
-        <div>
-            This is Hero with function and return
+// Lottie animation configuration
+const defaultOptions = {
+  loop: true,
+  play: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
+const Hero = () => {
+  return (
+    <section id="home" className="hero-section">
+      <div className="hero-text">
+        <div className="hero-intro">
+          <h1 className="hero-greeting">
+            Hi there!
+            {/* <br className="line-break" />I am */}
+          </h1>
+
+          <div className="lets-connect-large">
+            <LetsConnect />
+          </div>
         </div>
-    );
-}
+
+        <h1 className="hero-name">
+          <span className="iam-text">I'm</span> <span className="text-gradient">{aboutMe.name}</span>
+        </h1>
+        <p className="hero-description">
+          {aboutMe.intro}
+        </p>
+      </div>
+
+      <div className="hero-animation">
+        <div className="animation-container">
+          <Lottie {...defaultOptions} />
+        </div>
+        <div className="animation-gradient"></div>
+      </div>
+
+      <div className="lets-connect-small">
+        <LetsConnect />
+      </div>
+    </section>
+  );
+};
 
 export default Hero;
