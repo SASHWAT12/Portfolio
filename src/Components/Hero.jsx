@@ -20,22 +20,21 @@ const Hero = () => {
     <section id="home" className="hero-section">
       <div className="hero-text">
         <div className="hero-intro">
-          <h1 className="hero-greeting">
-            Hi there!
-            {/* <br className="line-break" />I am */}
+          <h1 className="hero-greeting">Hi there! 👋</h1>
+          <h1 className="hero-name">
+            <span className="iam-text">I am</span> <span className="text-gradient">{aboutMe.name}</span>
           </h1>
-
-          <div className="lets-connect-large">
-            <LetsConnect />
-          </div>
         </div>
-
-        <h1 className="hero-name">
-          <span className="iam-text">I'm</span> <span className="text-gradient">{aboutMe.name}</span>
-        </h1>
         <p className="hero-description">
           {aboutMe.intro}
         </p>
+      </div>
+
+      <div className="lets-connect-large">
+        <LetsConnect />
+      </div>
+      <div className="lets-connect-small">
+        <LetsConnect />
       </div>
 
       <div className="hero-animation">
@@ -45,11 +44,10 @@ const Hero = () => {
         <div className="animation-gradient"></div>
       </div>
 
-      <div className="lets-connect-small">
-        <LetsConnect />
-      </div>
+      
     </section>
   );
 };
 
 export default Hero;
+

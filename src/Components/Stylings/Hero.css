@@ -1,164 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Poppins:wght@400;600&display=swap');
 
 /* Basic layout */
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    padding: 6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1.5rem;
+  height: 100vh; /* Full height of the viewport */
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row; /* Align items in a row for larger screens */
   }
-  
-  @media (min-width: 768px) {
-    .hero-section {
-      flex-direction: row;
-    }
-  }
-  
-  /* Left Side: Hero Text */
+}
+
+/* Left Side: Hero Text */
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
   .hero-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 0;
   }
-  
-  @media (min-width: 1024px) {
-    .hero-text {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-  
-  .hero-intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
-  
+}
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.hero-greeting {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  font-style: normal;
+  line-height: 5.5rem;
+  margin-bottom: 0;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
   .hero-greeting {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 80px;
+    font-size: 30px;
   }
-  
-  @media (min-width: 640px) {
-    .hero-greeting {
-      font-size: 72px;
-    }
-  }
-  
-  .line-break {
-    display: none;
-  }
-  
-  @media (min-width: 640px) {
-    .line-break {
-      display: block;
-    }
-  }
-  
-  /* Name with Gradient */
+}
+
+.hero-name {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+@media (min-width: 640px) {
   .hero-name {
-    font-family: 'Satisfy', cursive;
-    font-weight: 400;
-    font-size: 4rem;
-    line-height: 5.5rem;
-    font-style: normal;
-    display: inline-block; /* Ensures inline rendering */
-    margin-top: 1rem; /* Optional: adjust spacing as needed */
+    font-size: 68px;
+  }
 }
 
 .iam-text {
-    color: white; /* White color for "I am" */
+  color: white;
 }
 
 .text-gradient {
-    background: linear-gradient(to right, #F26C4F, #F26C4F); /* Solid gradient for name */
-    -webkit-background-clip: text;
-    color: transparent;
+  background: linear-gradient(to right, #F26C4F, #FEF4F2); /* Solid gradient effect */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
+/* Hero Description */
+.hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #b3b3b3;
+  font-size: 18px;
+  line-height: 30.8px;
+  max-width: 470px;
+  margin-top: 1.25rem;
+}
 
+/* Right Side: Lottie Animation */
+.hero-animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 2.5rem;
+  z-index: 2;  /* Ensure the animation stays in front */
+}
+
+@media (min-width: 768px) {
+  .hero-animation {
+    margin-top: 0;
+  }
+}
+
+.animation-container {
+  position: relative;
+  z-index: 5;
+  height: 90%;
+  width: 85%;  /* Set a wide width to avoid fully circular */
+  background: transparent;  /* Ensure the background is transparent */
+  border-radius: 45% 50% 15% 50%;  /* This creates a "soft square" effect */
+  box-shadow: 0 0 120px rgba(242, 108, 79, 0.7), 0 0 300px rgba(242, 108, 79, 0.3); /* Continuous glowing effect */
+  overflow: hidden;  /* Ensure no overflow of the animation */
+}
+
+/* Gradient Background Behind the Lottie */
+.animation-gradient {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  bottom: 40px;
+  background: radial-gradient(circle, rgba(242, 108, 79, 0.3), transparent); /* Continuous light effect */
+}
+
+/* Lets Connect Button Visibility */
+.lets-connect-large {
+  margin-left: -7.2rem; /* Adjust this value to move it more to the left */
+}
 
 @media (min-width: 640px) {
-    .hero-name {
-        font-size: 68px;
-    }
-}
-  
-  .text-gradient {
-    background: linear-gradient(to right, #F26C4F, #FEF4F2); /* Solid gradient effect */
-    -webkit-background-clip: text;
-    color: transparent;
+  .lets-connect-large {
+    display: block;
+    margin-right: 1rem;
+  }
 }
 
-  
-  /* Hero Description */
-  .hero-description {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #b3b3b3; /* Assuming dim white */
-    font-size: 18px;
-    line-height: 30.8px;
-    max-width: 470px;
-    margin-top: 1.25rem;
-  }
-  
-  /* Right Side: Lottie Animation */
-  .hero-animation {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 2.5rem;
-  }
-  
-  @media (min-width: 768px) {
-    .hero-animation {
-      margin-top: 0;
-    }
-  }
-  
-  .animation-container {
-    position: relative;
-    z-index: 5;
-    height: 90%;
-    width: 85%;
-  }
-  
-  /* Gradient Background */
-  .animation-gradient {
-    position: absolute;
-    z-index: 1;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    bottom: 40px;
-    background: radial-gradient(circle, white, transparent);
-  }
-  
-  /* Lets Connect Button Visibility */
-  .lets-connect-large {
+.lets-connect-small {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .lets-connect-small {
     display: none;
   }
-  
-  @media (min-width: 640px) {
-    .lets-connect-large {
-      display: block;
-      margin-right: 1rem;
-    }
-  }
-  
-  .lets-connect-small {
-    display: block;
-  }
-  
-  @media (min-width: 640px) {
-    .lets-connect-small {
-      display: none;
-    }
-  }
-  
+}
+
+.lets-connect-center {
+  display: flex;
+  justify-content: flex-start;  /* Align the button to the left */
+  align-items: center;
+}
