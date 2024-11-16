@@ -21,8 +21,15 @@ const Hero = () => {
       <div className="hero-text">
         <div className="hero-intro">
           <h1 className="hero-greeting">Hi there! 👋</h1>
+          <br /> <br /> <br /> <br />
           <h1 className="hero-name">
-            <span className="iam-text">I am</span> <span className="text-gradient">{aboutMe.name}</span>
+            <span className="iam-text">I am </span>
+          </h1>
+          <div className="lets-connect-large">
+              <LetsConnect />
+          </div>
+          <h1 className="hero-name">
+          <span className="text-gradient">{aboutMe.name}</span>
           </h1>
         </div>
         <p className="hero-description">
@@ -30,9 +37,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="lets-connect-large">
-        <LetsConnect />
-      </div>
+      
       <div className="lets-connect-small">
         <LetsConnect />
       </div>

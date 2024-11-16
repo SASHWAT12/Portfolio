@@ -15,8 +15,6 @@
     flex-direction: row; /* Align items in a row for larger screens */
   }
 }
-
-/* Left Side: Hero Text */
 .hero-text {
   flex: 1;
   display: flex;
@@ -24,44 +22,30 @@
   padding: 0 1rem;
 }
 
-@media (min-width: 1024px) {
-  .hero-text {
-    padding: 0;
-  }
-}
-
 .hero-intro {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: white;
+  padding-left: 1.2rem;
 }
 
 .hero-greeting {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  font-style: normal;
+  font-size: 2rem;
   line-height: 5.5rem;
   margin-bottom: 0;
-  margin-left: 2rem;
   text-align: left;
-}
-
-@media (min-width: 640px) {
-  .hero-greeting {
-    font-size: 30px;
-  }
 }
 
 .hero-name {
   font-family: 'Satisfy', cursive;
   font-weight: 400;
   font-size: 4rem;
-  line-height: 5.5rem;
-  margin-top: 0.5rem;
+  line-height: 4rem;
+  margin-top: -1rem;
   text-align: left;
-  margin-left: 2rem;
   display: inline-block;
 }
 
@@ -80,8 +64,6 @@
   -webkit-background-clip: text;
   color: transparent;
 }
-
-/* Hero Description */
 .hero-description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -90,6 +72,8 @@
   line-height: 30.8px;
   max-width: 470px;
   margin-top: 1.25rem;
+  padding-left: 1.2rem;
+  text-align: left;
 }
 
 /* Right Side: Lottie Animation */
@@ -100,7 +84,7 @@
   align-items: center;
   position: relative;
   margin-top: 2.5rem;
-  z-index: 2;  /* Ensure the animation stays in front */
+  z-index: 2; /* Ensure the animation stays in front */
 }
 
 @media (min-width: 768px) {
@@ -113,11 +97,10 @@
   position: relative;
   z-index: 5;
   height: 90%;
-  width: 85%;  /* Set a wide width to avoid fully circular */
-  background: transparent;  /* Ensure the background is transparent */
-  border-radius: 45% 50% 15% 50%;  /* This creates a "soft square" effect */
-  box-shadow: 0 0 120px rgba(242, 108, 79, 0.7), 0 0 300px rgba(242, 108, 79, 0.3); /* Continuous glowing effect */
-  overflow: hidden;  /* Ensure no overflow of the animation */
+  width: 85%; /* Set a wide width to avoid fully circular */
+  border-radius: 45% 50% 15% 50%; /* This creates a "soft square" effect */
+  box-shadow: 0 0 120px rgba(242, 108, 79, 0.7), 0 0 300px rgba(242, 108, 79, 0.3);
+  overflow: hidden; /* Ensure no overflow of the animation */
 }
 
 /* Gradient Background Behind the Lottie */
@@ -128,18 +111,18 @@
   height: 50%;
   border-radius: 50%;
   bottom: 40px;
-  background: radial-gradient(circle, rgba(242, 108, 79, 0.3), transparent); /* Continuous light effect */
+  background: radial-gradient(circle, rgba(242, 108, 79, 0.3), transparent);
 }
 
-/* Lets Connect Button Visibility */
 .lets-connect-large {
-  margin-left: -7.2rem; /* Adjust this value to move it more to the left */
+  margin-left: 23rem;
+  margin-top: -12rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 640px) {
   .lets-connect-large {
-    display: block;
-    margin-right: 1rem;
+    display: flex;
   }
 }
 
@@ -155,6 +138,7 @@
 
 .lets-connect-center {
   display: flex;
-  justify-content: flex-start;  /* Align the button to the left */
+  justify-content: flex-start; /* Ensures alignment to the left */
   align-items: center;
+  margin-left: -5rem; /* Moves the button slightly to the left */
 }
