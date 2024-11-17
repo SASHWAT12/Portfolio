@@ -1,130 +1,152 @@
+/* General Section Styles */
 .education-section {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
+  background-color: #121212;
+  background: radial-gradient(circle at left, rgba(242, 108, 79, 0.3) 0%, transparent 400px);
+
 }
 
 .education-heading {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 55px;
   color: white;
   line-height: 80px;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  text-align: left; /* Ensure left alignment */
 }
 
-.education-heading-large {
-  font-size: 55px;
-}
-
+/* Section Container Layout */
 .section-container {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; /* Distribute content evenly */
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem;
+  padding-top: 0%;
 }
 
+/* Lottie Animation Styles */
 .section-image-container {
-  position: relative;
-  flex: 1;
+  flex: 1.2; /* Take up 50% of the screen */
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 40%; /* Ensure smaller width for the Lottie */
+  position: relative;
+  width: 50%; /* Explicitly set to 50% of the screen */
 }
 
+/* Gradient Overlay for Lottie */
 .section-image-container .lottie {
-  width: 100%;
-  height: auto;
+  width: 100% ; /* Ensures scaling */
+  max-width: 600px ; /* Adjust size of Lottie */
+  height: auto ; /* Height adjusted to maintain aspect ratio */
+  object-fit: contain; /* Maintain aspect ratio */
+  position: relative;
+  z-index: 1;
 }
 
-.gradient {
+/* Gradient Overlay Styles */
+.section-image-container::before {
+  content: "";
   position: absolute;
-  border-radius: 50%;
-}
-
-.gradient-white {
-  background: linear-gradient(white, transparent);
-  left: -50%;
   top: 0;
-  width: 50%;
-  height: 50%;
-  z-index: 3;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Place it behind the Lottie */
 }
 
-.gradient-pink {
-  background: linear-gradient(pink, transparent);
-  left: -50%;
-  bottom: 0;
-  width: 50%;
-  height: 50%;
-  z-index: 0;
-}
-
+/* Content Area Styles */
 .section-info {
-  flex: 1;
+  flex: 1; /* Take up 50% of the screen */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 1rem;
+  width: 50%; /* Explicitly set to 50% of the screen */
 }
-
 .feature-card {
   display: flex;
   flex-direction: row;
   padding: 1.5rem;
   border-radius: 20px;
   margin-bottom: 1.5rem;
+  text-align: left; /* Align text to the left */
+  background-color: transparent; /* Default background */
+  height: 180px;
+  width: 500px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.feature-card:hover {
+  background: linear-gradient(90deg, rgba(242, 108, 79, 0.3), rgba(210, 180, 140, 0.3));
+  transform: scale(1.02); /* Optional: Slightly enlarges the card */
 }
 
 .feature-card:last-child {
   margin-bottom: 0;
 }
 
+/* Icon Styles */
 .feature-icon-container {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: #1c253c;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .feature-icon {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
+/* Content Text Styles */
 .feature-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 1rem;
+  text-align: left; /* Ensure left alignment */
 }
 
 .feature-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 20px;
-  color: white;
-  line-height: 30px;
-  margin-bottom: 0.5rem;
+  color: #d3c525;
+  line-height: 20px; /* Adjusted for closer spacing */
+  margin-bottom: 0.4rem; /* Reduced margin between title and degree */
+  text-align: left; /* Ensure left alignment */
 }
 
 .feature-degree,
 .feature-duration,
 .feature-content-item {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #b0b0b0;
   font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 0.5rem;
+  line-height: 20px; /* Reduced line spacing */
+  margin-bottom: 0.4rem; /* Reduced vertical gap between lines */
+  text-align: left; /* Ensure left alignment */
+}
+.feature-degree{
+  font-weight:bold;
+  color: #ffffff;
 }
 
 .feature-duration {
   font-size: 14px;
+  text-align: left; /* Ensure left alignment */
 }

@@ -4,6 +4,8 @@ import githubIcon from "./GithubIcon.svg";
 import Gmailicon from "./GmailIcon.svg";
 import LinkedInIcon from "./LinkedInIcon.svg";
 import TwitterIcon from "./TwitterIcon.svg";
+import KalingaIcon from "./KalingaIcon.png";
+import SchoolIcon from "./SchoolIcon.png";
 
 export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
 export { PassportImage };
@@ -40,19 +42,21 @@ export const SocialMedia = [
 export const educationList = [
     {
       id: "education-1",
-      //icon: ,
+      icon: KalingaIcon,
       title: "Kalinga University, Raipur",
       degree: "Bachelor of Technology",
       duration: "July 2018 - June 2022",
       content1: "Major: Computer Science",
       content2: "",
+      link: "https://kalingauniversity.ac.in/",
     },
-    // {
-    //   id: "education-2",
-    //   icon: ,
-    //   title: "",
-    //   degree: "",
-    //   duration: "",
-    //   content1: "",
-    // },
+    {
+      id: "education-2",
+      icon: SchoolIcon,
+      title: "Sachdeva International School, Raipur",
+      degree: "HSC",
+      duration: "Apr 2017 - Mar 2028",
+      content1: "Major: Mathematics",
+      link: "https://www.sachdevainternationalschool.org/?hl=en&gl=us",
+    },
   ];
