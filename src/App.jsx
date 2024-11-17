@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import ContactMe from './Components/ContactMe';
+import Education from './Components/Education';
 import LetsConnect from './Components/LetsConnect';
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       </header>
       {/* This is Main */}
       <main>
-      This is body
       <Hero />
+      <Education />
       </main>
       {/* This is footer */}
       <footer>

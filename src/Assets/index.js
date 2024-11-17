@@ -36,3 +36,23 @@ export const SocialMedia = [
         link:""
     }
 ];
+
+export const educationList = [
+    {
+      id: "education-1",
+      //icon: ,
+      title: "Kalinga University, Raipur",
+      degree: "Bachelor of Technology",
+      duration: "July 2018 - June 2022",
+      content1: "Major: Computer Science",
+      content2: "",
+    },
+    // {
+    //   id: "education-2",
+    //   icon: ,
+    //   title: "",
+    //   degree: "",
+    //   duration: "",
+    //   content1: "",
+    // },
+  ];
