@@ -5,6 +5,7 @@ import Hero from './Components/Hero';
 import ContactMe from './Components/ContactMe';
 import Education from './Components/Education';
 import LetsConnect from './Components/LetsConnect';
+import Skills from './Components/Skills';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <main>
       <Hero />
       <Education />
+
+      <Skills />
       </main>
       {/* This is footer */}
       <footer>
