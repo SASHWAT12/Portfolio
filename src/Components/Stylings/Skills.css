@@ -27,7 +27,7 @@
 }
 
 /* Category Card */
-.card {
+.SkillSet {
   margin: 0 auto;
   flex: 0 1 calc((100% - 4rem) / 3); /* Distributes space evenly for 3 columns */
   max-width: 320px; /* Set a maximum width for the columns */
@@ -37,7 +37,7 @@
   border-radius: 10px; /* Smooth corners for the card */
 }
 
-/* .card:hover {
+/* .SkillSet:hover {
   background: linear-gradient(90deg, rgba(242, 108, 79, 0.3), rgba(210, 180, 140, 0.3));
   transform: scale(1.02); /* Slightly enlarges the card 
 } */
@@ -86,7 +86,7 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .card {
+  .SkillSet {
     flex: 0 1 calc((100% - 3rem) / 2);
     max-width: calc((100% - 3rem) / 2);
   }
@@ -97,7 +97,7 @@
 }
 
 @media (max-width: 768px) {
-  .card {
+  .SkillSet {
     flex: 0 1 100%;
     max-width: 100%;
   }

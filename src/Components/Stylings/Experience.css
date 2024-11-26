@@ -1,0 +1,120 @@
+/* General Layout */
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.experience-container {
+  display: flex;
+  align-items: center; /* Vertically align both the Lottie and the cards */
+}
+
+.lottie-container {
+  margin-right: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  height: 45rem;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow cards to take up available space */
+}
+
+/* Experience Heading */
+.experience-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+  text-align: left;
+  color: white;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+
+/* Experience Card */
+.experience-card {
+  text-align: left;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  margin-left: .2rem;
+  margin-bottom: 1.75rem;
+  margin-top: -1rem;
+}
+
+.experience-logo {
+  width: 48px; /* Adjusted size */
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.experience-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color:transparent;
+  background: linear-gradient(to right, #f87474, #FEF4F2); /* Apply linear gradient */
+  -webkit-background-clip: text;
+}
+
+/* Experience List */
+.experience-list {
+  position: relative;
+  border-left: 1px solid #374151;
+  margin-left: 16px;
+  padding-left: 16px;
+  list-style-type: none;
+  margin-top: -1rem;
+  margin-left: 1.5rem;
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #374151;
+  border-radius: 50%;
+  left: -21px;
+  top: 8px;
+}
+
+/* Position Title */
+.experience-position {
+  font-size: 16px;
+  font-weight:bold;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.experience-duration {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-bottom: 8px;
+}
+
+/* Content Styles */
+.content-container {
+  margin-bottom: 8px;
+}
+
+.content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b0b0b0;
+}

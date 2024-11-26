@@ -17,7 +17,7 @@ const Skills = () => {
           );
 
           return (
-            <div className="card" key={index}>
+            <div className="SkillSet" key={index}>
               <h2 className="category-heading">{category}</h2>
               <div className="skills-list">
                 {columns.map((column, colIndex) => (
@@ -26,7 +26,7 @@ const Skills = () => {
                       <motion.div
                         className="skill-card"
                         key={skill.id}
-                        whileHover={{ scale: 1.5 }}
+                        whileHover={{ scale: 1.1 }}
                       >
                         <img src={skill.icon} alt={skill.name} className="skill-icon" />
                         <p className="skill-name">{skill.name}</p>
