@@ -29,9 +29,14 @@ import PostmanIcon from "./PostmanIcon.svg";
 import CIcon from "./CIcon.svg";
 import VoisIcon from "./VoisIcon.jpeg";
 import SmartbridgeIcon from "./SmartbridgeIcon.jpeg";
+import Arcane from "./Arcane.jpg";
+import Dapp from "./Dapp.png";
+import TruffleIcon from "./TruffleIcon.png";
+import GanacheIcon from "./GanacheIcon.png";
+import MetamaskIcon from "./MetamaskIcon.svg";
 
 export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
-export { PassportImage };
+export { PassportImage, Arcane, Dapp, GithubIcon };
 export const aboutMe = {
     name: "Sashwat Pashpulate",
     tagLine: "WEB Developer | React.js, MERN Stack | Senior Executive @ _VOIS",
@@ -243,163 +248,168 @@ export const educationList = [
   export const projects = [
     {
       id: "project-1",
-      title: "Comicify.ai",
-      github: "https://github.com/ayush4345/Comicify.ai",
-      link: "https://comicify-ai.vercel.app/",
-      image: ReactIcon,
+      title: "ARC E-Commerce",
+      github: "https://github.com/SASHWAT12/ARC-Ecommerce",
+      link: "",
+      image: Arcane,
       content:
-        "Convert any academic/news/boring text into cool comic strips using GPT-3.5 and Stable Diffusion!",
+        "Developed a full-stack e-commerce website inspired by League of Legends, leveraging HTML, CSS, JavaScript, Node.js, and MySQL to deliver a dynamic and responsive user experience.",
       stack: [
         {
           id: "icon-1",
-          icon: ReactIcon,
-          name: "React"
+          icon: HtmlIcon,
+          name: "HTML"
         },
         {
           id: "icon-2",
-          icon: ReactIcon,
-          name: "TailwindCSS"
+          icon: CssIcon,
+          name: "CSS"
         },
         {
           id: "icon-3",
-          icon: ReactIcon,
-          name: "OpenAI"
+          icon: JavascriptIcon,
+          name: "JavaScript"
         },
         {
           id: "icon-4",
-          icon: ReactIcon,
-          name: "Google Cloud Platform"
+          icon: NodeJsIcon,
+          name: "Node.js"
         },
         {
           id: "icon-5",
-          icon: ReactIcon,
-          name: "Flask"
+          icon: SQLIcon,
+          name: "MySQL"
         },
       ],
     },
     {
       id: "project-2",
-      title: "GreenTrust",
-      github: "https://github.com/mittal-parth/GreenTrust",
-      link: "https://green-trust-fantom.netlify.app/",
-      image: ReactIcon,
+      title: "ElectionVoteDapp",
+      github: "https://github.com/SASHWAT12/ElectionVoteDapp",
+      link: "",
+      image: Dapp,
       content:
-        "Winning project at 3 hackathons, GreenTrust offers a novel solution for obtaining certification in organic farming by organizing credible and decentralized Participatory Guarantee Systems (PGSs).",
+        "Built a secure and user-friendly decentralized voting app (DApp) using Ethereum smart contracts, Truffle, Ganache, and Metamask.",
       stack: [
         {
           id: "icon-1",
-          icon: ReactIcon,
-          name: "React"
+          icon: TruffleIcon,
+          name: "Truffle"
         },
         {
           id: "icon-2",
-          icon: ReactIcon,
-          name: "TailwindCSS"
+          icon: GanacheIcon,
+          name: "Ganache"
         },
         {
           id: "icon-3",
-          icon: ReactIcon,
-          name: "Next.js"
+          icon: MetamaskIcon,
+          name: "MetaMask"
         },
         {
           id: "icon-4",
-          icon: ReactIcon,
-          name: "IPFS"
+          icon: NodeJsIcon,
+          name: "Node.js"
         },
         {
           id: "icon-5",
-          icon: ReactIcon,
-          name: "Solidity"
+          icon: JavascriptIcon,
+          name: "Javascript"
         },
         {
           id: "icon-6",
-          icon: ReactIcon,
-          name: "Push Protocol"
-        },
-      ],
-    },
-    {
-      id: "project-3",
-      title: "ChargeSwap",
-      github: "https://github.com/CommanderAstern/ChargeSwap",
-      link: "https://devfolio.co/projects/chargeswap-3527",
-      image: ReactIcon,
-      content:
-        "A Blockchain-based EV-Battery swapping solution - winning project at ETHIndia'22, the world's largest Ethereum Hackathon",
-      stack: [
-        {
-          id: "icon-1",
-          icon: ReactIcon,
-          name: "React"
-        },
-        {
-          id: "icon-3",
-          icon: ReactIcon,
-          name: "Web3.js"
-        },
-        {
-          id: "icon-4",
-          icon: ReactIcon,
-          name: "Solidity"
-        },
-        {
-          id: "icon-5",
-          icon: ReactIcon,
-          name: "HardHat"
-        },
-        {
-          id: "icon-6",
-          icon: ReactIcon,
-          name: "IPFS"
+          icon: HtmlIcon,
+          name: "HTML"
         },
         {
           id: "icon-7",
-          icon: ReactIcon,
-          name: "Arduino"
-        },
-        {
-          id: "icon-8",
-          icon: ReactIcon,
-          name: "Push Protocol"
+          icon: CssIcon,
+          name: "CSS"
         },
       ],
     },
-    {
-      id: "project-4",
-      title: "Samsotech Table Management System",
-      github: "",
-      link: "https://www.linkedin.com/posts/mittal-parth_technologysolutions-softwaredevelopment-technology-activity-6994915645066809344-WnMY?utm_source=share&utm_medium=member_desktop",
-      image: ReactIcon,
-      content:
-        "Restaurant, Place, Table and realtime Reservation Management with Multi-Tenant Architecture, RBAC, SMS and Email integration for Samsotech International",
-      stack: [
-        {
-          id: "icon-1",
-          icon: ReactIcon,
-          name: "Dot Net Core MVC 6"
-        },
-        {
-          id: "icon-2",
-          icon: ReactIcon,
-          name: "Bootstrap"
-        },
-        {
-          id: "icon-3",
-          icon: ReactIcon,
-          name: "MS Sql Server"
-        },
-        {
-          id: "icon-4",
-          icon: ReactIcon,
-          name: "jQuery"
-        },
-        {
-          id: "icon-5",
-          icon: ReactIcon,
-          name: "Twillio"
-        },
-      ],
-    },
+    // {
+    //   id: "project-3",
+    //   title: "ChargeSwap",
+    //   github: "https://github.com/CommanderAstern/ChargeSwap",
+    //   link: "https://devfolio.co/projects/chargeswap-3527",
+    //   image: ReactIcon,
+    //   content:
+    //     "A Blockchain-based EV-Battery swapping solution - winning project at ETHIndia'22, the world's largest Ethereum Hackathon",
+    //   stack: [
+    //     {
+    //       id: "icon-1",
+    //       icon: ReactIcon,
+    //       name: "React"
+    //     },
+    //     {
+    //       id: "icon-3",
+    //       icon: ReactIcon,
+    //       name: "Web3.js"
+    //     },
+    //     {
+    //       id: "icon-4",
+    //       icon: ReactIcon,
+    //       name: "Solidity"
+    //     },
+    //     {
+    //       id: "icon-5",
+    //       icon: ReactIcon,
+    //       name: "HardHat"
+    //     },
+    //     {
+    //       id: "icon-6",
+    //       icon: ReactIcon,
+    //       name: "IPFS"
+    //     },
+    //     {
+    //       id: "icon-7",
+    //       icon: ReactIcon,
+    //       name: "Arduino"
+    //     },
+    //     {
+    //       id: "icon-8",
+    //       icon: ReactIcon,
+    //       name: "Push Protocol"
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: "project-4",
+    //   title: "Samsotech Table Management System",
+    //   github: "",
+    //   link: "https://www.linkedin.com/posts/mittal-parth_technologysolutions-softwaredevelopment-technology-activity-6994915645066809344-WnMY?utm_source=share&utm_medium=member_desktop",
+    //   image: ReactIcon,
+    //   content:
+    //     "Restaurant, Place, Table and realtime Reservation Management with Multi-Tenant Architecture, RBAC, SMS and Email integration for Samsotech International",
+    //   stack: [
+    //     {
+    //       id: "icon-1",
+    //       icon: ReactIcon,
+    //       name: "Dot Net Core MVC 6"
+    //     },
+    //     {
+    //       id: "icon-2",
+    //       icon: ReactIcon,
+    //       name: "Bootstrap"
+    //     },
+    //     {
+    //       id: "icon-3",
+    //       icon: ReactIcon,
+    //       name: "MS Sql Server"
+    //     },
+    //     {
+    //       id: "icon-4",
+    //       icon: ReactIcon,
+    //       name: "jQuery"
+    //     },
+    //     {
+    //       id: "icon-5",
+    //       icon: ReactIcon,
+    //       name: "Twillio"
+    //     },
+    //   ],
+    // },
     // {
     //   id: "project-5",
     //   title: "Non-Teaching Recruitment Portal, NITK",

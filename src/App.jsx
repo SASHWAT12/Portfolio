@@ -7,6 +7,7 @@ import Education from './Components/Education';
 import LetsConnect from './Components/LetsConnect';
 import Skills from './Components/Skills';
 import Experience from './Components/Experience';
+import Projects from './Components/Projects';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <Skills />
 
       <Experience />
+
+      <Projects />
       </main>
       {/* This is footer */}
       <footer>

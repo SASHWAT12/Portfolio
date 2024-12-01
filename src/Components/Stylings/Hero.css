@@ -94,11 +94,12 @@
 }
 
 .animation-container {
+  cursor: pointer;
   position: relative;
   z-index: 5;
   height: 90%;
   width: 85%; /* Set a wide width to avoid fully circular */
-  border-radius: 45% 50% 15% 50%; /* This creates a "soft square" effect */
+  border-radius: 15% 15% 15% 15%; /* This creates a "soft square" effect border-radius: 45% 50% 15% 50%; */
   box-shadow: 0 0 120px rgba(242, 108, 79, 0.7), 0 0 300px rgba(242, 108, 79, 0.3);
   overflow: hidden; /* Ensure no overflow of the animation */
 }
