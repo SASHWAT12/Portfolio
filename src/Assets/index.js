@@ -34,6 +34,10 @@ import Dapp from "./Dapp.png";
 import TruffleIcon from "./TruffleIcon.png";
 import GanacheIcon from "./GanacheIcon.png";
 import MetamaskIcon from "./MetamaskIcon.svg";
+import close from "./close.svg";
+import menu from "./menu.svg";
+
+export {close,menu};
 
 export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
 export { PassportImage, Arcane, Dapp, GithubIcon };
@@ -595,4 +599,35 @@ export const educationList = [
     //     },
     //   ],
     // },
+  ];
+
+  export const navLinks = [
+    {
+      id: "Hero",
+      title: "Hero",
+    },
+    {
+      id: "Skills",
+      title: "Skills",
+    },
+    {
+      id: "Experience",
+      title: "Experience",
+    },
+    {
+      id: "Education",
+      title: "Education",
+    },
+    {
+      id: "Projects",
+      title: "Projects",
+    },
+    // {
+    //   id: "openSource",
+    //   title: "Open Source",
+    // },
+    {
+      id: "ContactMe",
+      title: "Contact Me",
+    },
   ];

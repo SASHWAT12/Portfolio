@@ -13,25 +13,42 @@ function App() {
   return (
     <div className="App">
       {/* This is Header */}
-      <header > {/*className="App-header">*/}
+      <header>
         <p>This is Header</p>
       </header>
+      
       {/* This is Main */}
       <main>
-      <Hero />
-      <Education />
+        <Navbar />
 
-      <Skills />
+        {/* Assign IDs to sections */}
+        <section id="Hero">
+          <Hero />
+        </section>
 
-      <Experience />
+        <section id="Education">
+          <Education />
+        </section>
 
-      <Projects />
+        <section id="Skills">
+          <Skills />
+        </section>
+
+        <section id="Experience">
+          <Experience />
+        </section>
+
+        <section id="Projects">
+          <Projects />
+        </section>
       </main>
-      {/* This is footer */}
+      
+      {/* This is Footer */}
       <footer>
-        <ContactMe />
+        <section id="ContactMe">
+          <ContactMe />
+        </section>
       </footer>
-
     </div>
   );
 }
