@@ -10,7 +10,7 @@ import LetsConnect from './Components/LetsConnect';
 import Skills from './Components/Skills';
 import Experience from './Components/Experience';
 import Projects from './Components/Projects';
-import Loading from './Components/Loading';  // Import the loading component
+import Loading from './Components/Loading';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,38 +33,28 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.75, delay: 0.25 }}
           >
-            {/* This is Header */}
           <header>
-            <p>This is Header</p>
+            <Navbar />
           </header>
 
-          {/* This is Main */}
           <main>
-            <Navbar />
-
-            {/* Assign IDs to sections */}
             <section id="Hero">
               <Hero />
             </section>
-
-            <section id="Education">
-              <Education />
-            </section>
-
-            <section id="Skills">
-              <Skills />
-            </section>
-
             <section id="Experience">
               <Experience />
             </section>
-
+            <section id="Skills">
+              <Skills />
+            </section>
             <section id="Projects">
               <Projects />
             </section>
+            <section id="Education">
+              <Education />
+            </section>
           </main>
 
-          {/* This is Footer */}
           <footer>
             <section id="ContactMe">
               <ContactMe />

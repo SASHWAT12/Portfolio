@@ -603,24 +603,20 @@ export const educationList = [
 
   export const navLinks = [
     {
-      id: "Hero",
-      title: "Hero",
+      id: "Experience",
+      title: "Experience",
     },
     {
       id: "Skills",
       title: "Skills",
     },
     {
-      id: "Experience",
-      title: "Experience",
+      id: "Projects",
+      title: "Projects",
     },
     {
       id: "Education",
       title: "Education",
-    },
-    {
-      id: "Projects",
-      title: "Projects",
     },
     // {
     //   id: "openSource",
