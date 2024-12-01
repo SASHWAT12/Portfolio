@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="150" viewBox="0 0 300 100">
+  <!-- Left Curly Brace -->
+  <path d="M80,30 Q70,30 70,40 Q70,50 60,50 Q70,50 70,60 Q70,70 80,70" 
+        stroke="#5ee2d0" stroke-width="4" fill="none" />
+  
+  <!-- Right Curly Brace -->
+  <path d="M220,30 Q230,30 230,40 Q230,50 240,50 Q230,50 230,60 Q230,70 220,70" 
+        stroke="#5ee2d0" stroke-width="4" fill="none" />
+  
+  <!-- Text -->
+  <text x="50%" y="55%" fill="white" font-family="Tangerine" font-size="28" font-weight="bold" text-anchor="middle" dy=".3em">
+    SASHWAT
+  </text>
+</svg>

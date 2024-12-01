@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import "./Stylings/Loading.css";
-import { PassportImage } from '../Assets';
+import { Sign } from '../Assets';
 
 const Loading = () => {
   return (
@@ -16,7 +16,7 @@ const Loading = () => {
         ease: 'easeInOut',
       }}
     >
-      <img src={PassportImage} alt="Parth Mittal" className="loading-image" />
+      <img src={Sign} alt="Parth Mittal" className="loading-image" />
     </motion.div>
   );
 };

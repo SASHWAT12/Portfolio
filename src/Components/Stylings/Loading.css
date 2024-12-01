@@ -10,7 +10,7 @@
 
 /* Define image size and animation */
 .loading-image {
-  width: 80px;
-  height: 80px;
+  width: 180px;
+  height: 180px;
   animation: .5s ease-in-out infinite; /* Animates the scaling and opacity */
 }

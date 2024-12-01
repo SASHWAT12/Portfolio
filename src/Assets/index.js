@@ -36,8 +36,9 @@ import GanacheIcon from "./GanacheIcon.png";
 import MetamaskIcon from "./MetamaskIcon.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
+import Sign from "./Sign.svg";
 
-export {close,menu};
+export {close,menu,Sign};
 
 export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
 export { PassportImage, Arcane, Dapp, GithubIcon };

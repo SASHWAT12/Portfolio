@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { close, PassportImage, menu } from "../Assets";
+import { close, Sign, menu } from "../Assets";
 import { navLinks } from "../Assets";
 import "./Stylings/Navbar.css";
 
@@ -21,7 +21,7 @@ const Navbar = () => {
       {/* Logo */}
       <a href="#home">
         <img
-          src={PassportImage}
+          src={Sign}
           alt="Sashwat Pashpulate"
           className="navbar-logo"
         />
