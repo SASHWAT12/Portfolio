@@ -1,10 +1,12 @@
 .App {
+  flex-grow: 1;
   background-color: #00040f;
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
 }
 
-
-/* Optionally, you can style other sections more specifically */
+footer {
+  margin-top: auto;  /* Push footer to the bottom if needed */
+}

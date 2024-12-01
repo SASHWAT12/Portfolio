@@ -31,7 +31,7 @@ function App() {
             key="content"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.75, delay: 0.5 }}
+            transition={{ duration: 0.75, delay: 0.25 }}
           >
             {/* This is Header */}
           <header>

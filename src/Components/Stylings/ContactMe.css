@@ -4,7 +4,6 @@
     flex-direction: column; /* Stack mainContent and footerText vertically */
     align-items: center;
     width: 100%;
-    padding: 20px;
     box-sizing: border-box;
   }
   
@@ -41,9 +40,9 @@
   .licensePara {
     text-align: center;
     color: #FEF4F2;
-    margin-top: 40px;
-    margin-bottom: -25px;
-    font-size: 1.2rem;
+    padding: 0%;
+    margin-top: 30px;
+    font-size: 1rem;
   }
   
   .profilePhoto img {
