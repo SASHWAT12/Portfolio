@@ -44,8 +44,8 @@ export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
 export { PassportImage, Arcane, Dapp, GithubIcon };
 export const aboutMe = {
     name: "Sashwat Pashpulate",
-    tagLine: "WEB Developer | React.js, MERN Stack | Senior Executive @ _VOIS",
-    intro: "Software Developer from India who is either busy improving his craft or pondering over the next big idea.",
+    tagLine: "Full-Stack Developer | MERN Stack & Performance Optimization | Senior Executive @ _VOIS | Expertise in C++, React.js and Cloud Technologies",
+    intro: "Software Developer with expertise in building scalable applications and enhancing user experiences. Proficient in debugging, optimizing systems, and aligning technical solutions with business goals. Passionate about innovation and delivering high-quality results.",
     signature: "Made with 💙 by Sashwat Pashpulate"
 }
 export const resumeLink = "https://drive.usercontent.google.com/u/0/uc?id=1U_jHvWHnc22xxzD7OAInBMTo5hiD2srY&export=download";
@@ -146,7 +146,19 @@ export const educationList = [
           duration: "Aug 2023 - Present",
           content: [
             {
-              text: "Working in the DBaaS Control Plane team in the Database Unit.",
+              text: "Developed and maintained a Perl-based web application that monitors systems, alerts and improves eﬃciency.",
+              link: "",
+            },
+            {
+              text: "Deployed web applications on Linux servers and ensured proper configuration and optimization.",
+              link: "",
+            },
+            {
+              text: "Developed advance SQL scripts for data extraction, analysis, and patching purposes.",
+              link: "",
+            },
+            {
+              text: "Developed and maintained Linux-based automation scripts to streamline IT operations and improve eﬃciency.",
               link: "",
             },
           ],
@@ -156,11 +168,11 @@ export const educationList = [
           duration: "Aug 2022 - Aug 2023",
           content: [
             {
-              text: "Worked with the Exadata Cloud@Customer team in the Database Unit.",
+              text: "Managed SQL databases, including data modeling, query optimization, and performance tuning.",
               link: "",
             },
             {
-              text: "Wrote APIs in Java to help gracefully migrate a running ExaC@C infrastructure to a new region in the case of a region failure",
+              text: "Resolved production issues in the Amdocs CRM application, utilizing problem-solving skills and technical knowledge. Collaborated with cross-functional teams to analyze and troubleshoot complex problems.",
               link: ""
             }
           ],
