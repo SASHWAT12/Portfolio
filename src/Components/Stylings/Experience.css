@@ -1,8 +1,12 @@
-/* General Layout */
 .experience-section {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #121212;
+  background: radial-gradient(circle at left, rgba(242, 108, 79, 0.3) 0%, transparent 400px);
+
 }
 
 .experience-container {
