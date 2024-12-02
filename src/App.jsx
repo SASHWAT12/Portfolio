@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
-
+import {Navbar,Hero,ContactMe,Education,Skills,Experience,Projects,Loading} from "./Components";
 import './App.css';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import ContactMe from './Components/ContactMe';
-import Education from './Components/Education';
-import LetsConnect from './Components/LetsConnect';
-import Skills from './Components/Skills';
-import Experience from './Components/Experience';
-import Projects from './Components/Projects';
-import Loading from './Components/Loading';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

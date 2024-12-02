@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LetsConnect from "./LetsConnect";
+import {LetsConnect} from "../Components";
 import Lottie from "react-lottie-player";
 import animationData from "./Lotties/person-coding.json";
 import { aboutMe } from "../Assets";
