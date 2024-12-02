@@ -3,6 +3,7 @@
   padding: 2rem;
 }
 
+/* Projects Heading */
 .projects-heading {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -21,9 +22,9 @@
 /* Marquee container for Project cards */
 .marquee-container {
   display: flex;
-  gap: 2rem; /* Apply gap between cards inside the marquee */
-  padding-left: 2rem; /* Add padding to the left side */
-  padding-right: -2rem; /* Add padding to the right side */
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: -2rem;
 }
 
 /* Individual Project card */
@@ -33,14 +34,15 @@
   border-radius: 12px;
   transition: all 0.3s;
   background: #121212;
-  max-width: 350px; /* Set max width for the card */
-  height: 450px; /* Set a fixed height */
+  max-width: 350px;
+  height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures content is spaced within the card */
-  margin: 0 auto; /* Center cards in their grid cell */
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
+/* Hover effect for Project card */
 .project-card:hover {
   border-color: transparent;
   background: #222;
@@ -54,6 +56,7 @@
   flex-grow: 1;
 }
 
+/* Project image */
 .project-image {
   margin-top: -5px;
   width: 6rem;
@@ -63,11 +66,13 @@
   border: 4px solid gray;
 }
 
+/* Project details */
 .project-details {
   margin-top: 1rem;
   text-align: center;
 }
 
+/* Project title */
 .project-title {
   font-family: 'Poppins', sans-serif;
   margin-top: -10px;
@@ -77,10 +82,12 @@
   transition: color 0.3s;
 }
 
+/* Project card hover effect for title */
 .project-card:hover .project-title {
   color: white;
 }
 
+/* Project tech */
 .project-tech {
   margin-top: 0.5rem;
   color: #ccc;
@@ -88,10 +95,12 @@
   font-weight: normal;
 }
 
+/* Project stack */
 .project-stack {
   margin-top: 1rem;
 }
 
+/* Stack icons */
 .stack-icons {
   display: flex;
   justify-content: center;
@@ -110,7 +119,7 @@
   color: #1de9b6;
 }
 
-/* Tooltip */
+/* Tooltip for stack icons */
 .tooltip-text {
   visibility: hidden;
   width: auto;
@@ -127,30 +136,30 @@
   font-size: 0.75rem;
   white-space: nowrap;
 }
+
 .stack-icon img,
 .stack-icon svg {
-  width: 32px; /* Ensures consistent width */
-  height: 32px; /* Ensures consistent height */
-  object-fit: contain; /* Prevents distortion */
-  display: block; /* Avoids unwanted spacing around SVGs */
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
 }
-
 
 .stack-icon:hover .tooltip-text {
   visibility: visible;
 }
 
-/* Description */
+/* Project description */
 .project-description {
   margin-top: 1.5rem;
   color: #aaa;
   font-family: 'Poppins', sans-serif;
-  word-wrap: break-word; /* Ensures the text wraps correctly */
-  white-space: normal; /* Allows the description to break into new lines */
-  overflow: hidden; /* Prevents overflowing content */
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
 }
 
-/* Links */
+/* Project links */
 .project-links {
   margin-bottom: -1rem;
   padding: 0%;
@@ -158,6 +167,7 @@
   gap: 1rem;
   justify-content: center;
 }
+
 .project-links img {
   height: 48px;
   width: 48px;
@@ -172,4 +182,73 @@
 
 .icon:hover {
   color: #1de9b6;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* Make project cards take full width */
+  .project-card {
+    max-width: 100%;
+    margin: 0 1rem; /* Add margin to ensure space between cards */
+    height: auto; /* Allow height to adjust automatically */
+  }
+
+  /* Adjust heading size for mobile screens */
+  .projects-heading {
+    font-size: 40px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Stack cards vertically on mobile devices */
+  .marquee-container {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Adjust project title size */
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust description size */
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust project image size */
+  .project-image {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce heading size for smaller screens */
+  .projects-heading {
+    font-size: 35px;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Reduce padding and margins for smaller screens */
+  .project-card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .project-image {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* Adjust project description size */
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
 }

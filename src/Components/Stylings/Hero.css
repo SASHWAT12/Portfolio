@@ -59,7 +59,6 @@
 
 .iam-text {
   color: white;
-
 }
 
 .text-gradient {
@@ -67,6 +66,7 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .hero-description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -143,4 +143,81 @@
   display: flex;
   justify-content: flex-start; /* Ensures alignment to the left */
   align-items: center;
+}
+
+/* Mobile Version Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    padding: 1rem;
+  }
+
+  .hero-text {
+    margin-top: -5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .hero-intro {
+    align-items: center;
+    padding-left: 0;
+    padding-bottom: 0%;
+  }
+
+  .hero-greeting {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+    margin-top: -4rem;
+  }
+
+  .iam-text {
+    color: white;
+  }
+
+  .text-gradient {
+    font-size: 2rem;
+    background: linear-gradient(to right, #F26C4F, #FEF4F2);
+    -webkit-background-clip: text;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-animation {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .animation-container {
+    width: 70%; /* Slightly smaller container */
+  }
+
+  .animation-gradient {
+    width: 60%;
+    height: 60%;
+    bottom: 20px;
+  }
+
+  .lets-connect-large {
+    display: none; /* Hide the large "Let's Connect" section on mobile */
+  }
+
+  .lets-connect-small {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Ensure a small gap for mobile version */
+  }
+
+  .lets-connect-center {
+    justify-content: center; /* Center-align the content for mobile */
+  }
 }

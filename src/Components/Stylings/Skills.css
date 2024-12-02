@@ -37,11 +37,6 @@
   border-radius: 10px; /* Smooth corners for the card */
 }
 
-/* .SkillSet:hover {
-  background: linear-gradient(90deg, rgba(242, 108, 79, 0.3), rgba(210, 180, 140, 0.3));
-  transform: scale(1.02); /* Slightly enlarges the card 
-} */
-
 /* Category Heading */
 .category-heading {
   font-size: 1.5rem;
@@ -89,6 +84,11 @@
   .SkillSet {
     flex: 0 1 calc((100% - 3rem) / 2);
     max-width: calc((100% - 3rem) / 2);
+  }
+
+  .skills-heading{
+    font-size: 40px;
+    margin-bottom: -15vw;
   }
 
   .skills-grid {

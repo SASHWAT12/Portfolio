@@ -1,3 +1,4 @@
+/* Experience Section */
 .experience-section {
   padding: 2rem;
   display: flex;
@@ -6,12 +7,11 @@
   align-items: flex-start;
   background-color: #121212;
   background: radial-gradient(circle at left, rgba(242, 108, 79, 0.3) 0%, transparent 400px);
-
 }
 
 .experience-container {
   display: flex;
-  align-items: center; /* Vertically align both the Lottie and the cards */
+  align-items: center;
 }
 
 .lottie-container {
@@ -23,14 +23,12 @@
   height: 45rem;
 }
 
-
 .cards-container {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Allow cards to take up available space */
+  flex: 1;
 }
 
-/* Experience Heading */
 .experience-heading {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -41,7 +39,6 @@
   margin-left: 2rem;
 }
 
-/* Experience Card */
 .experience-card {
   text-align: left;
 }
@@ -55,7 +52,7 @@
 }
 
 .experience-logo {
-  width: 48px; /* Adjusted size */
+  width: 48px;
   height: 48px;
   border-radius: 50%;
   margin-right: 8px;
@@ -66,12 +63,11 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
-  color:transparent;
-  background: linear-gradient(to right, #f87474, #FEF4F2); /* Apply linear gradient */
+  color: transparent;
+  background: linear-gradient(to right, #f87474, #FEF4F2);
   -webkit-background-clip: text;
 }
 
-/* Experience List */
 .experience-list {
   position: relative;
   border-left: 1px solid #374151;
@@ -97,10 +93,9 @@
   top: 8px;
 }
 
-/* Position Title */
 .experience-position {
   font-size: 16px;
-  font-weight:bold;
+  font-weight: bold;
   color: white;
   margin-bottom: 4px;
 }
@@ -111,7 +106,6 @@
   margin-bottom: 8px;
 }
 
-/* Content Styles */
 .content-container {
   margin-bottom: 8px;
 }
@@ -121,4 +115,103 @@
   font-size: 14px;
   font-weight: 500;
   color: #b0b0b0;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lottie-container {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 20rem;
+  }
+
+  .experience-heading {
+    font-size: 40px;
+    margin-left: 0;
+  }
+
+  .experience-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .experience-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .experience-title {
+    font-size: 18px;
+  }
+
+  .experience-position {
+    font-size: 14px;
+  }
+
+  .experience-duration {
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+}
+
+/* Specific adjustments for 768px to 1024px (tablet devices) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .experience-heading {
+    font-size: 45px; /* Slightly bigger font than smaller mobile */
+    margin-left: 1rem;
+  }
+
+  .lottie-container {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .experience-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .experience-title {
+    font-size: 19px;
+  }
+
+  .experience-position {
+    font-size: 15px;
+  }
+
+  .experience-duration {
+    font-size: 13px;
+  }
+
+  .content {
+    font-size: 13px;
+  }
+}
+
+/* Extra small screens adjustments */
+@media (max-width: 480px) {
+  .experience-heading {
+    font-size: 40px;
+    margin-bottom: 2rem;
+  }
+
+  .lottie-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0%;
+  }
+
+  .experience-title {
+    font-size: 16px;
+  }
 }

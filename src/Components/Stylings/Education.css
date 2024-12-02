@@ -7,7 +7,6 @@
   align-items: flex-start;
   background-color: #121212;
   background: radial-gradient(circle at left, rgba(242, 108, 79, 0.3) 0%, transparent 400px);
-
 }
 
 .education-heading {
@@ -25,7 +24,7 @@
 .section-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Distribute content evenly */
+  justify-content: space-between;
   width: 100%;
   gap: 2rem;
   padding: 1rem;
@@ -44,10 +43,10 @@
 
 /* Gradient Overlay for Lottie */
 .section-image-container .lottie {
-  width: 100% ; /* Ensures scaling */
-  max-width: 600px ; /* Adjust size of Lottie */
-  height: auto ; /* Height adjusted to maintain aspect ratio */
-  object-fit: contain; /* Maintain aspect ratio */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
   position: relative;
   z-index: 1;
 }
@@ -60,17 +59,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* Place it behind the Lottie */
+  z-index: 0;
 }
 
 /* Content Area Styles */
 .section-info {
-  flex: 1; /* Take up 50% of the screen */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
-  width: 50%; /* Explicitly set to 50% of the screen */
+  width: 50%;
 }
 .feature-card {
   display: flex;
@@ -78,16 +77,16 @@
   padding: 1.5rem;
   border-radius: 20px;
   margin-bottom: 1.5rem;
-  text-align: left; /* Align text to the left */
-  background-color: transparent; /* Default background */
+  text-align: left;
+  background-color: transparent;
   height: 180px;
   width: 500px;
-  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth hover transition */
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .feature-card:hover {
   background: linear-gradient(90deg, rgba(242, 108, 79, 0.3), rgba(210, 180, 140, 0.3));
-  transform: scale(1.02); /* Optional: Slightly enlarges the card */
+  transform: scale(1.02);
 }
 
 .feature-card:last-child {
@@ -117,7 +116,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-left: 1rem;
-  text-align: left; /* Ensure left alignment */
+  text-align: left;
 }
 
 .feature-title {
@@ -125,9 +124,9 @@
   font-weight: 600;
   font-size: 20px;
   color: #d3c525;
-  line-height: 20px; /* Adjusted for closer spacing */
-  margin-bottom: 0.4rem; /* Reduced margin between title and degree */
-  text-align: left; /* Ensure left alignment */
+  line-height: 20px;
+  margin-bottom: 0.4rem;
+  text-align: left;
 }
 
 .feature-degree,
@@ -137,16 +136,129 @@
   font-weight: 500;
   color: #b0b0b0;
   font-size: 16px;
-  line-height: 20px; /* Reduced line spacing */
-  margin-bottom: 0.4rem; /* Reduced vertical gap between lines */
-  text-align: left; /* Ensure left alignment */
+  line-height: 20px;
+  margin-bottom: 0.4rem;
+  text-align: left;
 }
-.feature-degree{
-  font-weight:bold;
+
+.feature-degree {
+  font-weight: bold;
   color: #ffffff;
 }
 
 .feature-duration {
   font-size: 14px;
-  text-align: left; /* Ensure left alignment */
+  text-align: left;
+}
+
+/* Mobile Responsive Styles */
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+  /* Stack content vertically on mobile */
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  /* Adjust heading size for mobile */
+  .education-heading {
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    padding: 0%;
+  }
+
+  /* Adjust Lottie image size to be larger */
+  .section-image-container {
+    width: 100%; /* Ensure container is full width */
+    flex: 1; /* Allow it to take available space */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-image-container .lottie {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  /* Adjust section-info to take full width on mobile */
+  .section-info {
+    width: 100%; /* Set width to 100% */
+    padding-left: 0px;
+
+  }
+
+  /* Stack feature cards vertically and adjust size */
+  .feature-card {
+    padding: 0%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .feature-content {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .feature-degree,
+  .feature-duration {
+    font-size: 14px;
+  }
+
+  /* Adjust icon size */
+  .feature-icon-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature-icon {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .education-heading {
+    font-size: 32px; /* Decrease font size further */
+  }
+
+  .section-container {
+    gap: 1rem; /* Reduce gap between sections */
+  }
+
+  .feature-card {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .feature-title {
+    font-size: 16px; /* Reduce title size */
+  }
+
+  .feature-degree,
+  .feature-duration {
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .feature-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-icon {
+    width: 80%;
+    height: 80%;
+  }
 }

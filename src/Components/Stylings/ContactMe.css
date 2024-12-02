@@ -1,97 +1,177 @@
+/* Default Desktop Styles */
 .footerArea {
-    background-color: #813e00;
-    display: flex;
-    flex-direction: column; /* Stack mainContent and footerText vertically */
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .footerContent {
-    display: flex;
-    flex-direction: row; /* Place ProfileContent and profilePhoto side by side */
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    align-items: center;
-  }
-  .ProfileContent {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
-    text-align: left;        /* Ensure text is left-aligned */
-    color: #FEF4F2;
-    padding: 20px;
-    margin-left: -100px;
-    max-width: 50%;
-  }
-  
-  .ProfileContent a{
-    padding-top: 25px;
-  }
-  
-  .profilePhoto {
-    display: flex;
-    flex-direction: column;
-    margin-right: -60px;
-  }
-  
-  .licensePara {
-    text-align: center;
-    color: #FEF4F2;
-    padding: 0%;
-    margin-top: 30px;
-    font-size: 1rem;
-  }
-  
-  .profilePhoto img {
-    width: 250px;
-    height: 250px;
-    border: 2.5px solid #f87474;
-    border-radius: 50%;
-    object-fit: cover;               /* Ensures the image fills the dimensions without distortion */
-    max-width: 100%;                 /* Prevents the image from overflowing if the container is smaller */
-  }
-  
-  
-  .linksImage {
-    display: flex;
-    align-items: center;
-    flex-direction: row; /* Make icons appear below the text */
-    align-items: flex-start; /* Align icons to the left */
-    margin-top: 20px; /* Spacing between the text and the icons */
-  }
-  
-  .linksImage img {
-    height: 35px;
-    width: 35px;
-    margin-right: 35px; /* Adds spacing between the icons */
-    object-fit: cover;
-    transition: 300ms ease-in;
-  }
-  .linksImage img:hover{
-    transform:scale(1.2) rotate(-45deg);  
-  }
-  
-  .myResume a{
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #F87474;
-    font-size: 1.4rem;
-    padding: 1.2rem 1.6rem;
-    border: .1rem solid #F87474;
-    border-radius: .5rem;
-    background-color: #FEF4F2 !important;
-    /* transition: background .5s, border 0.5s, color 0.5s ease-in-out; Add a 0s transition for the specified properties */
-  }
-  
-  .myResume a:hover {
-    background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%); /* Add your desired gradient colors */
-    color: white;
-    border: .1rem  solid white;
-    transition: all 0.6s ease-in-out; 
-    /* Add a 0s transition for the specified properties */ 
-  } 
+  background-color: #813e00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.ProfileContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  color: #FEF4F2;
+  padding: 20px;
+  margin-left: -100px;
+  max-width: 50%;
+}
+
+.ProfileContent a {
+  padding-top: 25px;
+}
+
+.profilePhoto {
+  display: flex;
+  flex-direction: column;
+  margin-right: -60px;
+}
+
+.licensePara {
+  text-align: center;
+  color: #FEF4F2;
+  padding: 0%;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.profilePhoto img {
+  width: 250px;
+  height: 250px;
+  border: 2.5px solid #f87474;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.linksImage {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Make icons appear in a row */
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.linksImage img {
+  height: 35px;
+  width: 35px;
+  margin-right: 35px;
+  object-fit: cover;
+  transition: 300ms ease-in;
+}
+
+.linksImage img:hover {
+  transform: scale(1.2) rotate(-45deg);
+}
+
+.myResume a {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #F87474;
+  font-size: 1.4rem;
+  padding: 1.2rem 1.6rem;
+  border: .1rem solid #F87474;
+  border-radius: .5rem;
+  background-color: #FEF4F2 !important;
+}
+
+.myResume a:hover {
+  background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%);
+  color: white;
+  border: .1rem solid white;
+  transition: all 0.6s ease-in-out;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+/* Keep icons in a row on mobile */
+.footerContent {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.ProfileContent {
+  margin-left: 0;
+  max-width: 90%;
+  align-items: center;
+  text-align: center;
+}
+
+.profilePhoto {
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.profilePhoto img {
+  width: 200px;
+  height: 200px;
+}
+
+.linksImage {
+  flex-direction: row; /* Keep icons in a horizontal row */
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center; /* Center the icons horizontally */
+}
+
+.linksImage img {
+  margin-right: 15px; /* Adjust space between icons */
+}
+
+.myResume a {
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+}
+
+.licensePara {
+  font-size: 0.9rem;
+}
+}
+
+@media only screen and (max-width: 480px) {
+/* Further adjustments for very small screens */
+.footerArea {
+  padding: 10px;
+}
+
+.ProfileContent {
+  max-width: 100%;
+  margin-left: 0;
+}
+
+.profilePhoto img {
+  width: 180px;
+  height: 180px;
+}
+
+.linksImage img {
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.myResume a {
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.licensePara {
+  font-size: 0.8rem;
+}
+}
