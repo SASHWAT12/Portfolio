@@ -3,42 +3,41 @@ import { close, Sign, menu } from "../Assets";
 import { navLinks } from "../Assets";
 import "./Stylings/Navbar.css";
 
-
+// Scroll function for smooth navigation to sections
 export const scrollToSection = (id) => {
   const element = document.getElementById(id);
-  const yOffset = -70;
+  const yOffset = 0;
   const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
 
   window.scrollTo({ top: y, behavior: "smooth" });
 };
-
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="navbar">
-      {/* Logo */}
-      <a href="#home">
-        <img
-          src={Sign}
-          alt="Sashwat Pashpulate"
-          className="navbar-logo"
-        />
-      </a>
+      {/* Navbar Logo wrapped in div */}
+      <div className="navbar-logo">
+        <a href="#home">
+          <img src={Sign} alt="Sashwat Pashpulate" />
+        </a>
+      </div>
 
-      {/* List of links */}
-      <ul className="navbar-links">
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className="navbar-item"
-            onClick={() => scrollToSection(nav.id)}
-          >
-            {nav.title}
-          </li>
-        ))}
-      </ul>
+      {/* Navbar Links wrapped in div */}
+      <div className="navbar-links">
+        <ul>
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className="navbar-item"
+              onClick={() => scrollToSection(nav.id)}
+            >
+              {nav.title}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Mobile Menu */}
       <div className="navbar-mobile">

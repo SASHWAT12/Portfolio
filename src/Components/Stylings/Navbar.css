@@ -1,41 +1,37 @@
+/* Base styles for navbar */
 .navbar {
+  padding-bottom: 2rem;
   width: 100%;
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: center;
-  padding: 1rem 2rem;
-  background: transparent;
+  justify-content: space-between; /* Space between logo and links */
 }
 
-.navbar-logo {
-  width: 240px;
-  height: 120px;
+.navbar-logo img{
+  height: 5rem;
+  width: auto;
 }
 
-.navbar-links {
-  padding-left: 23rem; /* Change after added open source component*/
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 4.5rem; /* Increase the gap between navbar items */
-  margin: 0;
-  flex: 1; /* Fill remaining space after logo */
+.navbar-links ul{
+  padding-right: 8vw;
+  display: flex; /* Ensures links are displayed horizontally */
+  gap: 5rem;
+}
+
+.navbar-links li {
+  list-style: none; /* Ensures no bullet points */
 }
 
 .navbar-item {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 20px; /* Match font size with design */
   color: white;
   cursor: pointer;
   transition: color 0.3s ease;
+  line-height: 2.5rem; /* Align with the logo's height */
 }
 
 .navbar-item:hover {
   color: #f87474;
-}
-
-.navbar-item:last-child {
-  margin-right: 0;
 }
 
 /* Mobile-specific styles */
@@ -44,13 +40,14 @@
 }
 
 .navbar-toggle-icon {
-  width: 28px;
-  height: 28px;
+  padding: 1.5rem;
+  width: 2rem;
   cursor: pointer;
   object-fit: contain;
 }
 
 .navbar-sidebar {
+  display: none; 
   position: absolute;
   top: 5rem;
   right: 1rem;
@@ -58,24 +55,28 @@
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.8));
   border-radius: 10px;
   min-width: 140px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .sidebar-links {
-  list-style: none;
+  list-style: none; /* Remove bullets from the sidebar links */
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 .sidebar-item {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: white;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
+}
+
+/* Sidebar link styles */
+.sidebar-item a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: white; /* Set the text color to white */
+  text-decoration: none; /* Remove underline from links */
 }
 
 .sidebar-item:last-child {
@@ -84,14 +85,38 @@
 
 /* Responsive for smaller devices */
 @media screen and (max-width: 640px) {
+  .navbar {
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .navbar-links {
-    display: none;
+    display: none; /* Hide desktop links for mobile */
   }
 
   .navbar-mobile {
+    display: block; /* Show mobile toggle icon */
+  }
+
+  .navbar-toggle-icon {
+    display: block; /* Ensure the toggle icon is displayed */
+  }
+
+  .navbar-sidebar {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: 1;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    background: linear-gradient(180deg, rgba(242, 108, 79, 0.7), rgba(242, 108, 79, 0.3)),rgba(0, 0, 0, 1); 
+    border-radius: 10%;
+    min-width: 140px;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .navbar-logo {
+    padding-left: 0%;
+    margin-left: -8%;
   }
 }
