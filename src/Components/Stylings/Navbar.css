@@ -1,6 +1,7 @@
 /* Base styles for navbar */
 .navbar {
   padding-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
   display: flex;
   justify-content: space-between; /* Space between logo and links */
