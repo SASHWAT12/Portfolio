@@ -13,6 +13,7 @@
 @media (min-width: 768px) {
   .hero-section {
     flex-direction: row; /* Align items in a row for larger screens */
+    padding: 0%;
   }
 }
 .hero-text {
@@ -36,7 +37,7 @@
   font-weight: 400;
   font-size: 2rem;
   line-height: 5.5rem;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
   text-align: left;
 }
 
@@ -73,7 +74,6 @@
   font-size: 18px;
   line-height: 30.8px;
   max-width: 470px;
-  margin-top: 1.25rem;
   padding-left: 1.2rem;
   text-align: left;
 }
@@ -148,7 +148,6 @@
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column; /* Stack items vertically for smaller screens */
-    padding: 1rem;
   }
 
   .hero-text {
@@ -170,8 +169,7 @@
   }
 
   .hero-name {
-    font-size: 2.5rem;
-    margin-top: -4rem;
+    font-size: 2rem;
   }
 
   .iam-text {
@@ -197,7 +195,7 @@
   }
 
   .animation-container {
-    width: 70%; /* Slightly smaller container */
+    width: 100%; /* Slightly smaller container */
   }
 
   .animation-gradient {
@@ -213,7 +211,8 @@
   .lets-connect-small {
     display: flex;
     justify-content: center;
-    margin-top: 2rem; /* Ensure a small gap for mobile version */
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
   }
 
   .lets-connect-center {

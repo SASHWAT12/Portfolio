@@ -12,9 +12,9 @@
 .education-heading {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 3.5rem;
   color: white;
-  line-height: 80px;
+  line-height: 5rem;
   margin-bottom: 5rem;
   margin-left: 2rem;
   text-align: left; /* Ensure left alignment */
@@ -44,7 +44,7 @@
 /* Gradient Overlay for Lottie */
 .section-image-container .lottie {
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   height: auto;
   object-fit: contain;
   position: relative;
@@ -75,12 +75,12 @@
   display: flex;
   flex-direction: row;
   padding: 1.5rem;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   margin-bottom: 1.5rem;
   text-align: left;
   background-color: transparent;
-  height: 180px;
-  width: 500px;
+  height: 11.25rem;
+  width: 31.25rem;
   transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
@@ -95,8 +95,8 @@
 
 /* Icon Styles */
 .feature-icon-container {
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   display: flex;
   align-items: center;

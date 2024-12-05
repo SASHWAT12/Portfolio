@@ -7,7 +7,7 @@ const ContactMe = () =>(
         <div className="footerContent">
             <div className="ProfileContent">
                 <div>
-                <h2>{aboutMe.name}</h2>
+                <h1>{aboutMe.name}</h1>
                 <p>{aboutMe.tagLine}</p>
                 </div>
                 <div className="linksImage">

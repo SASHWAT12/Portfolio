@@ -3,12 +3,12 @@ import {LetsConnect} from "../Components";
 import Lottie from "react-lottie-player";
 import animationData from "./Lotties/person-coding.json";
 import { aboutMe } from "../Assets";
-import "./Stylings/Hero.css";  // Import the CSS file
+import "./Stylings/Hero.css";
 
 // Lottie animation configuration
 const defaultOptions = {
   loop: true,
-  play: true, // Play is initially set to true
+  play: true,
   animationData: animationData,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
@@ -16,11 +16,10 @@ const defaultOptions = {
 };
 
 const Hero = () => {
-  const [isPaused, setIsPaused] = useState(false); // State for play/pause
+  const [isPaused, setIsPaused] = useState(false);
 
-  // Toggle play/pause state on animation click
   const toggleAnimation = () => {
-    setIsPaused((prev) => !prev); // Toggle the state
+    setIsPaused((prev) => !prev); 
   };
 
   return (
@@ -28,7 +27,7 @@ const Hero = () => {
       <div className="hero-text">
         <div className="hero-intro">
           <h1 className="hero-greeting">Hi there! 👋</h1>
-          <br /> <br /> <br /> <br />
+          {/* <br /> <br /> <br /> <br /> */}
           <h1 className="hero-name">
             <span className="iam-text">I am </span>
           </h1>
@@ -50,7 +49,7 @@ const Hero = () => {
         <div className="animation-container" onClick={toggleAnimation}>
           <Lottie
             {...defaultOptions}
-            play={!isPaused} // Dynamically toggle play/pause
+            play={!isPaused} 
           />
         </div>
         <div className="animation-gradient"></div>
