@@ -87,6 +87,7 @@
 /* Responsive for smaller devices */
 @media screen and (max-width: 640px) {
   .navbar {
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     width: 100%;

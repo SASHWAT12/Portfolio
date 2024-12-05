@@ -48,7 +48,7 @@ export const aboutMe = {
     intro: "Software Developer with expertise in building scalable applications and enhancing user experiences. Proficient in debugging, optimizing systems, and aligning technical solutions with business goals. Passionate about innovation and delivering high-quality results.",
     signature: "Made with 💙 by Sashwat Pashpulate"
 }
-export const resumeLink = "https://drive.usercontent.google.com/u/0/uc?id=1U_jHvWHnc22xxzD7OAInBMTo5hiD2srY&export=download";
+export const resumeLink = "https://drive.usercontent.google.com/u/0/uc?id=1wvXYuCVQcicZZu1yMOmARbfdpCChxVar&export=download";
 export const SocialMedia = [
     {
         id:"social1",
