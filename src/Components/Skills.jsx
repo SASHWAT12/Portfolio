@@ -17,7 +17,13 @@ const Skills = () => {
           );
 
           return (
-            <div className="SkillSet" key={index}>
+            <motion.div
+              className="SkillSet"
+              initial={{ y: -30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 0.75, delay: 0.1 }}
+            >
               <h2 className="category-heading">{category}</h2>
               <div className="skills-list">
                 {columns.map((column, colIndex) => (
@@ -35,7 +41,7 @@ const Skills = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
