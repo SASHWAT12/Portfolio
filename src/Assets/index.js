@@ -1,4 +1,3 @@
-// Assets/images.js
 import PassportImage from "./PassportImage.jpg";
 import GithubIcon from "./GithubIcon.svg";
 import Gmailicon from "./GmailIcon.svg";
