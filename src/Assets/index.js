@@ -43,8 +43,8 @@ export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
 export { PassportImage, Arcane, Dapp, GithubIcon };
 export const aboutMe = {
     name: "Sashwat Pashpulate",
-    tagLine: "Full-Stack Developer | MERN Stack & Performance Optimization | Senior Executive @ _VOIS | Expertise in C++, React.js and Cloud Technologies",
-    intro: "Software Developer with expertise in building scalable applications and enhancing user experiences. Proficient in debugging, optimizing systems, and aligning technical solutions with business goals. Passionate about innovation and delivering high-quality results.",
+    tagLine: "Senior Executive @ _VOIS | Expertise in C++, React.js and Cloud Technologies",
+    intro: "Technical Support Engineer with expertise in handling scalable applications and enhancing user experiences. Proficient in debugging, optimizing systems, and aligning technical solutions with business goals. Passionate about innovation and delivering high-quality results.",
     signature: "Made with 💙 by Sashwat Pashpulate"
 }
 export const resumeLink = "https://drive.usercontent.google.com/download?id=1wvXYuCVQcicZZu1yMOmARbfdpCChxVar&export=download";
