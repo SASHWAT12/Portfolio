@@ -105,20 +105,20 @@ export const educationList = [
         { id: "skill6", icon: ConsoleIcon, name: "Shell Scripting" },
       ],
     },
-    {
-      category: "Other Skills",
-      skills: [
-        { id: "skill7", icon: HtmlIcon, name: "HTML5" },
-        { id: "skill8", icon: CssIcon, name: "CSS3" },
-        { id: "skill9", icon: ReactIcon, name: "React.js" },
-        { id: "skill10", icon: NodeJsIcon, name: "Node.js" },
-        { id: "skill11", icon: ExpressJsIcon, name: "Express.js" },
-        { id: "skill12", icon: JQueryIcon, name: "JQuery" },
-        { id: "skill13", icon: BootstrapIcon, name: "BootStrap" },
-        { id: "skill14", icon: TailwindIcon, name: "TailWind CSS" },
-        { id: "skill15", icon: MongoDBIcon, name: "MongoDB" },
-      ],
-    },
+    // {
+    //   category: "Web Developement",
+    //   skills: [
+    //     { id: "skill7", icon: HtmlIcon, name: "HTML5" },
+    //     { id: "skill8", icon: CssIcon, name: "CSS3" },
+    //     { id: "skill9", icon: ReactIcon, name: "React.js" },
+    //     { id: "skill10", icon: NodeJsIcon, name: "Node.js" },
+    //     { id: "skill11", icon: ExpressJsIcon, name: "Express.js" },
+    //     { id: "skill12", icon: JQueryIcon, name: "JQuery" },
+    //     { id: "skill13", icon: BootstrapIcon, name: "BootStrap" },
+    //     { id: "skill14", icon: TailwindIcon, name: "TailWind CSS" },
+    //     { id: "skill15", icon: MongoDBIcon, name: "MongoDB" },
+    //   ],
+    // },
     {
       category: "Other Skills",
       skills: [
