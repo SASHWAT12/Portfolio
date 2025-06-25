@@ -106,7 +106,7 @@ export const educationList = [
       ],
     },
     {
-      category: "Web Developement",
+      category: "Web Development",
       skills: [
         { id: "skill7", icon: HtmlIcon, name: "HTML5" },
         { id: "skill8", icon: CssIcon, name: "CSS3" },
