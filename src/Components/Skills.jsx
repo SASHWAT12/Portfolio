@@ -4,7 +4,9 @@ import "./Stylings/Skills.css";
 import { SkillSet } from "../Assets";
 
 const Skills = () => {
-  const categories = ["Programming Languages", "Web Development", "Other Skills"];
+    // const categories = ["Programming Languages", "Web Development", "Other Skills"];
+
+  const categories = ["Programming Languages", "Other Skills"];
 
   return (
     <div className="skills-section">
