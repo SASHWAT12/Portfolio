@@ -143,7 +143,7 @@ export const educationList = [
       positions: [
         {
           title: "Technical Support Engineer",
-          duration: "Aug 2023 - May 2025",
+          duration: "Aug 2022 - May 2025",
           content: [
             {
               text: "Resolved 99% of support tickets within SLA by performing in-depth log analysis, Linux troubleshooting, and environment replication using Unix-based systems.",
