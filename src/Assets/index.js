@@ -106,7 +106,7 @@ export const educationList = [
       ],
     },
     {
-      category: "Web Development",
+      category: "Other Skills",
       skills: [
         { id: "skill7", icon: HtmlIcon, name: "HTML5" },
         { id: "skill8", icon: CssIcon, name: "CSS3" },
@@ -133,6 +133,7 @@ export const educationList = [
     },
   ];
 
+
   
   export const experiences = [
     {
@@ -141,41 +142,49 @@ export const educationList = [
       link: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
       positions: [
         {
-          title: "Senior Executive",
-          duration: "Aug 2023 - Present",
+          title: "Technical Support Engineer",
+          duration: "Aug 2023 - May 2025",
           content: [
             {
-              text: "Developed and maintained a Perl-based web application that monitors systems, alerts and improves eﬃciency.",
+              text: "Resolved 99% of support tickets within SLA by performing in-depth log analysis, Linux troubleshooting, and environment replication using Unix-based systems.",
               link: "",
             },
             {
-              text: "Deployed web applications on Linux servers and ensured proper configuration and optimization.",
+              text: "Created and configured Linux-based test environments to reproduce customer-reported issues, accelerating root cause analysis and reducing resolution cycles.",
               link: "",
             },
             {
-              text: "Developed advance SQL scripts for data extraction, analysis, and patching purposes.",
+              text: "Executed advanced SQL queries and performed database optimization to support customer reporting and performance troubleshooting across CRM platforms.",
               link: "",
             },
             {
-              text: "Developed and maintained Linux-based automation scripts to streamline IT operations and improve eﬃciency.",
+              text: "Developed and maintained automation scripts on Linux, streamlining key operational tasks and reducing manual effort by 40%.",
+              link: "",
+            },
+            {
+              text: "Collaborated with cross-functional teams to investigate complex production issues in Amdocs CRM, improving resolution time by 2x through structured RCA and technical deep-dives.",
+              link: "",
+            },
+            {
+              text: "Created and maintained internal documentation for recurring issues and solutions, reducing ticket volume by 25% and improving knowledge sharing across teams.",
               link: "",
             },
           ],
         },
-        {
-          title: "Graduate Engineer Trainee",
-          duration: "Aug 2022 - Aug 2023",
-          content: [
-            {
-              text: "Managed SQL databases, including data modeling, query optimization, and performance tuning.",
-              link: "",
-            },
-            {
-              text: "Resolved production issues in the Amdocs CRM application, utilizing problem-solving skills and technical knowledge. Collaborated with cross-functional teams to analyze and troubleshoot complex problems.",
-              link: ""
-            }
-          ],
-        },
+        // {
+        //   title: "Graduate Engineer Trainee",
+        //   duration: "Aug 2022 - Aug 2023",
+        //   content: [
+        //     {
+        //       text: "Managed SQL databases, including data modeling, query optimization, and performance tuning.",
+        //       link: "",
+        //     },
+        //     {
+        //       text: "Resolved production issues in the Amdocs CRM application, utilizing problem-solving skills and technical knowledge. Collaborated with cross-functional teams to analyze and troubleshoot complex problems.",
+        //       link: ""
+        //     }
+        //   ],
+        // },
       ],
     },
     {
