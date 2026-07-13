@@ -36,8 +36,8 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 5.5rem;
-  margin-bottom: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
   text-align: left;
 }
 
@@ -45,8 +45,8 @@
   font-family: 'Satisfy', cursive;
   font-weight: 400;
   font-size: 4rem;
-  line-height: 4rem;
-  margin-top: -2rem;
+  line-height: 1.2;
+  margin-top: 0;
   text-align: left;
   display: inline-block;
 }
@@ -116,33 +116,7 @@
   background: radial-gradient(circle, rgba(242, 108, 79, 0.3), transparent);
 }
 
-.lets-connect-large {
-  margin-left: 23rem;
-  margin-top: -18rem;
-  padding-bottom: 7rem;
-}
-
-@media (min-width: 640px) {
-  .lets-connect-large {
-    display: flex;
-  }
-}
-
-.lets-connect-small {
-  display: block;
-}
-
-@media (min-width: 640px) {
-  .lets-connect-small {
-    display: none;
-  }
-}
-
-.lets-connect-center {
-  display: flex;
-  justify-content: flex-start; /* Ensures alignment to the left */
-  align-items: center;
-}
+/* Let's Connect styles removed */
 
 /* Mobile Version Adjustments */
 @media (max-width: 768px) {
@@ -164,12 +138,14 @@
 
   .hero-greeting {
     font-size: 1.5rem;
-    line-height: 3rem;
-    padding-bottom: 1rem;
+    line-height: 1.2;
+    padding-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .hero-name {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   .iam-text {
@@ -204,18 +180,5 @@
     bottom: 20px;
   }
 
-  .lets-connect-large {
-    display: none; /* Hide the large "Let's Connect" section on mobile */
-  }
-
-  .lets-connect-small {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-    margin-top: 1.5rem;
-  }
-
-  .lets-connect-center {
-    justify-content: center; /* Center-align the content for mobile */
-  }
+  /* Mobile Let's Connect styles removed */
 }

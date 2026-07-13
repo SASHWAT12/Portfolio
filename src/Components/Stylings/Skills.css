@@ -29,7 +29,7 @@
 /* Category Card */
 .SkillSet {
   margin: 0 auto;
-  flex: 0 1 calc((100% - 4rem) / 3); /* Distributes space evenly for 3 columns */
+  flex: 1 1 calc((100% - 6rem) / 4); /* Dynamically balance columns and allow them to grow */
   max-width: 320px; /* Set a maximum width for the columns */
   min-width: 200px; /* Ensure columns don’t shrink too much */
   text-align: center;
@@ -74,10 +74,7 @@
   color: white;
 }
 
-/* Specific adjustment for Frontend & Backend Development category */
-.skills-grid:nth-of-type(2) .skills-list {
-  gap: 2.5rem;
-}
+/* Specific adjustments removed */
 
 /* Responsive Design */
 @media (max-width: 1024px) {

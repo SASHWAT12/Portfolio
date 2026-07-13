@@ -41,11 +41,13 @@ const ExperienceCard = ({ logo, organisation, positions }) => {
       transition={{ duration: 1 }}
     >
       <div className="experience-header">
-        <img
-          src={logo}
-          alt={organisation}
-          className="experience-logo"
-        />
+        {logo && (
+          <img
+            src={logo}
+            alt={organisation}
+            className="experience-logo"
+          />
+        )}
         <h4 className="experience-title">{organisation}</h4>
       </div>
       <ol className="experience-list">

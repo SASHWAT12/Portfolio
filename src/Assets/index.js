@@ -5,29 +5,21 @@ import LinkedInIcon from "./LinkedInIcon.svg";
 import TwitterIcon from "./TwitterIcon.svg";
 import KalingaIcon from "./KalingaIcon.png";
 import SchoolIcon from "./SchoolIcon.png";
-import BootstrapIcon from "./BootstrapIcon.svg";
 import ConsoleIcon from "./ConsoleIcon.png";
 import CppIcon from "./CppIcon.svg";
 import CssIcon from "./CssIcon.svg";
-import DatabaseIcon from "./DatabaseIcon.png";
-import ExpressJsIcon from "./ExpressJsIcon.svg";
 import GitIcon from "./GitIcon.svg";
 import HtmlIcon from "./HtmlIcon.svg";
-import JQueryIcon from "./JQueryIcon.png";
 import JavascriptIcon from "./JavascriptIcon.svg";
 import LinuxIcon from "./LinuxIcon.png";
-import MongoDBIcon from "./MongoDBIcon.png";
 import NodeJsIcon from "./NodeJsIcon.svg";
 import ReactIcon from "./ReactIcon.svg";
 import SQLIcon from "./SQLIcon.svg";
 import PerlIcon from "./PerlIcon.png";
-import TailwindIcon from "./TailwindIcon.svg";
-import ViteIcon from "./ViteIcon.svg";
-import VSCodeIcon from "./VSCodeIcon.svg";
-import PostmanIcon from "./PostmanIcon.svg";
 import CIcon from "./CIcon.svg";
 import VoisIcon from "./VoisIcon.jpeg";
 import SmartbridgeIcon from "./SmartbridgeIcon.jpeg";
+import PerforceIcon from "./Perforce_logo.png";
 import Arcane from "./Arcane.jpg";
 import Dapp from "./Dapp.png";
 import TruffleIcon from "./TruffleIcon.png";
@@ -39,12 +31,11 @@ import Sign from "./Sign.svg";
 
 export {close,menu,Sign};
 
-export const LinkedInLink = "https://www.linkedin.com/in/sashwat-p-1952471b1/";
 export { PassportImage, Arcane, Dapp, GithubIcon };
 export const aboutMe = {
     name: "Sashwat Pashpulate",
-    tagLine: "Senior Executive @ _VOIS | Expertise in C++, React.js and Cloud Technologies",
-    intro: "Technical Support Engineer with expertise in handling scalable applications and enhancing user experiences. Proficient in debugging, optimizing systems, and aligning technical solutions with business goals. Passionate about innovation and delivering high-quality results.",
+    tagLine: "DevOps Engineer | Linux • Automation • CI/CD • Infrastructure as Code",
+    intro: "Software Engineer with expertise in Linux systems, production troubleshooting, workflow automation, and Static Code Analysis. Experienced in building internal engineering tools, investigating enterprise-scale production issues, and improving developer productivity through automation, scripting, and modern DevOps practices.",
     signature: "Made with 💙 by Sashwat Pashpulate"
 }
 export const resumeLink = "https://drive.usercontent.google.com/download?id=1wvXYuCVQcicZZu1yMOmARbfdpCChxVar&export=download";
@@ -95,47 +86,94 @@ export const educationList = [
 
   export const SkillSet = [
     {
-      category: "Programming Languages",
+      category: "Core Engineering",
       skills: [
-        { id: "skill1", icon: CppIcon, name: "C++ Language" },
-        { id: "skill2", icon: CIcon, name: "C Language" },
-        { id: "skill3", icon: SQLIcon, name: "SQL Language" },
-        { id: "skill4", icon: JavascriptIcon, name: "JavaScript" },
-        { id: "skill5", icon: PerlIcon, name: "PERL Programming" },
-        { id: "skill6", icon: ConsoleIcon, name: "Shell Scripting" },
-      ],
+        { id: "core1", icon: CIcon, name: "C" },
+        { id: "core2", icon: CppIcon, name: "C++" },
+        { id: "core3", icon: JavascriptIcon, name: "JavaScript" },
+        { id: "core4", icon: ReactIcon, name: "React" },
+        { id: "core5", icon: NodeJsIcon, name: "Node.js" },
+        { id: "core6", icon: HtmlIcon, name: "HTML" },
+        { id: "core7", icon: CssIcon, name: "CSS" },
+        { id: "core8", icon: SQLIcon, name: "SQL" },
+        { id: "core9", icon: null, name: "PostgreSQL" }
+      ]
     },
     {
-      category: "Web Development",
+      category: "DevOps & Infrastructure",
       skills: [
-        { id: "skill7", icon: HtmlIcon, name: "HTML5" },
-        { id: "skill8", icon: CssIcon, name: "CSS3" },
-        { id: "skill9", icon: ReactIcon, name: "React.js" },
-        { id: "skill10", icon: NodeJsIcon, name: "Node.js" },
-        { id: "skill11", icon: ExpressJsIcon, name: "Express.js" },
-        { id: "skill12", icon: JQueryIcon, name: "JQuery" },
-        { id: "skill13", icon: BootstrapIcon, name: "BootStrap" },
-        { id: "skill14", icon: TailwindIcon, name: "TailWind CSS" },
-        { id: "skill15", icon: MongoDBIcon, name: "MongoDB" },
-      ],
+        { id: "dev1", icon: GitIcon, name: "Git" },
+        { id: "dev2", icon: GithubIcon, name: "GitHub" },
+        { id: "dev3", icon: null, name: "GitLab" },
+        { id: "dev4", icon: null, name: "Docker" },
+        { id: "dev5", icon: null, name: "Kubernetes" },
+        { id: "dev6", icon: null, name: "Jenkins" },
+        { id: "dev7", icon: null, name: "CI/CD" },
+        { id: "dev8", icon: null, name: "Terraform" },
+        { id: "dev9", icon: null, name: "Ansible" },
+        { id: "dev10", icon: null, name: "AWS" },
+        { id: "dev11", icon: null, name: "YAML" }
+      ]
     },
     {
-      category: "Other Skills",
+      category: "Systems Engineering & Troubleshooting",
       skills: [
-        { id: "skill16", icon: ViteIcon, name: "Vite" },
-        { id: "skill17", icon: VSCodeIcon, name: "VSCode" },
-        { id: "skill18", icon: PostmanIcon, name: "PostMan API" },
-        { id: "skill19", icon: GitIcon, name: "Git" },
-        { id: "skill20", icon: GithubIcon, name: "GitHub" },
-        { id: "skill21", icon: LinuxIcon, name: "Linux Server Admin" },
-        { id: "skill22", icon: DatabaseIcon, name: "Database Admin" },
-      ],
+        { id: "sys1", icon: LinuxIcon, name: "Linux" },
+        { id: "sys2", icon: null, name: "XML" },
+        { id: "sys3", icon: null, name: "API Debugging" },
+        { id: "sys4", icon: null, name: "Log Analysis" },
+        { id: "sys5", icon: null, name: "Root Cause Analysis" },
+        { id: "sys6", icon: null, name: "Static Code Analysis" }
+      ]
     },
+    {
+      category: "Automation & Operations",
+      skills: [
+        { id: "auto1", icon: null, name: "Bash" },
+        { id: "auto2", icon: ConsoleIcon, name: "Shell Scripting" },
+        { id: "auto3", icon: null, name: "Python" },
+        { id: "auto4", icon: PerlIcon, name: "Perl" },
+        { id: "auto5", icon: null, name: "Workflow Automation" },
+        { id: "auto6", icon: null, name: "Internal Tooling" },
+        { id: "auto7", icon: null, name: "System Monitoring" },
+        { id: "auto8", icon: null, name: "Production Diagnostics" },
+        { id: "auto9", icon: null, name: "Process Automation" }
+      ]
+    }
   ];
 
 
   
   export const experiences = [
+    {
+      organisation: "Perforce Software",
+      logo: PerforceIcon,
+      link: "https://www.perforce.com/",
+      positions: [
+        {
+          title: "Software Engineer",
+          duration: "Aug 2025 – Present",
+          content: [
+            {
+              text: "Led Static Code Analysis investigations resolving customer issues, identifying root causes, resolving false positives, and partnering with engineering to validate fixes and improve product quality.",
+              link: ""
+            },
+            {
+              text: "Designed a one-click False Positive Reproduction framework that reduced investigation time from 2–4 hours to under 5 minutes while standardizing issue validation and improving engineering efficiency.",
+              link: ""
+            },
+            {
+              text: "Led global technical knowledge-sharing sessions on AI-assisted engineering workflows, coding standards, and support best practices, improving collaboration across engineering and support teams.",
+              link: ""
+            },
+            {
+              text: "Secured 2nd place in an internal company hackathon by building PulseInsights, an AI-powered platform that centralizes technical documentation, generates contextual summaries, and surfaces actionable insights.",
+              link: ""
+            }
+          ]
+        }
+      ]
+    },
     {
       organisation: "VOIS, India",
       logo: VoisIcon,
@@ -146,30 +184,22 @@ export const educationList = [
           duration: "Aug 2022 - May 2025",
           content: [
             {
-              text: "Resolved 99% of support tickets within SLA by performing in-depth log analysis, Linux troubleshooting, and environment replication using Unix-based systems.",
-              link: "",
+              text: "Owned investigation of enterprise CRM production issues using Linux, SQL, and log analysis, partnering with engineering to drive root cause analysis, validate fixes, and improve operational processes.",
+              link: ""
             },
             {
-              text: "Created and configured Linux-based test environments to reproduce customer-reported issues, accelerating root cause analysis and reducing resolution cycles.",
-              link: "",
+              text: "Engineered advanced Bash automation scripts and SQL solutions for production diagnostics, log analysis, bulk data corrections, and implementation support, accelerating issue resolution, eliminating repetitive manual tasks, and improving operational reliability.",
+              link: ""
             },
             {
-              text: "Executed advanced SQL queries and performed database optimization to support customer reporting and performance troubleshooting across CRM platforms.",
-              link: "",
+              text: "Developed a system health monitoring platform using Perl, JavaScript, HTML, and CSS, automating health checks and alerting.",
+              link: ""
             },
             {
-              text: "Developed and maintained automation scripts on Linux, streamlining key operational tasks and reducing manual effort by 40%.",
-              link: "",
-            },
-            {
-              text: "Collaborated with cross-functional teams to investigate complex production issues in Amdocs CRM, improving resolution time by 2x through structured RCA and technical deep-dives.",
-              link: "",
-            },
-            {
-              text: "Created and maintained internal documentation for recurring issues and solutions, reducing ticket volume by 25% and improving knowledge sharing across teams.",
-              link: "",
-            },
-          ],
+              text: "Designed an automation utility processing approximately 100 enterprise CRM order cancellations per minute, replacing a manual workflow that required a full business day.",
+              link: ""
+            }
+          ]
         },
         // {
         //   title: "Graduate Engineer Trainee",
