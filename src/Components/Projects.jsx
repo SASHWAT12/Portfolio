@@ -1,7 +1,6 @@
 import React from "react";
 import { projects, GithubIcon} from "../Assets";
 import { motion } from "framer-motion";
-import Marquee from "react-fast-marquee";  // Import Marquee component
 import "./Stylings/Projects.css";
 
 const Project = (props) => {

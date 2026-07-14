@@ -15,6 +15,7 @@ const ContactMe = () =>(
                         <a href={socials.link}
                         key={socials.id}
                         target="_blank"
+                        rel="noreferrer"
                         >
                             <img src={socials.icon} alt="" />
                         </a>
@@ -25,7 +26,7 @@ const ContactMe = () =>(
                 </div>
             </div>
             <div className="profilePhoto">
-                <img src={PassportImage} alt="Image"/>
+                <img src={PassportImage} alt={aboutMe.name}/>
             </div>
         </div>
         <div className="licensePara">
