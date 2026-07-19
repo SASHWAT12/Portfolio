@@ -64,7 +64,7 @@ export const aboutMe = {
     intro: "DevOps Engineer focused on building reliable, scalable, and automated infrastructure using Docker, Kubernetes, Terraform, AWS, and CI/CD pipelines. Experienced in Linux systems, production troubleshooting, automation, and Static Code Analysis, with a strong focus on improving software delivery, system reliability, and developer productivity through Infrastructure as Code and modern DevOps practices.",
     signature: "Made with 💙 by Sashwat Pashpulate"
 }
-export const resumeLink = "https://drive.usercontent.google.com/download?id=1wvXYuCVQcicZZu1yMOmARbfdpCChxVar&export=download";
+export const resumeLink = "https://drive.usercontent.google.com/uc?id=1rlvFeHw-HIe9aPGldTMMCiCjvUnBAGmK&export=download";
 export const SocialMedia = [
     {
         id:"social1",
