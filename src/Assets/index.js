@@ -28,14 +28,37 @@ import MetamaskIcon from "./MetamaskIcon.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
 import Sign from "./Sign.svg";
+import APIIcon from "./APIIcon.svg";
+import APIDebuggingIcon from "./APIIcon.svg";
+import AWSIcon from "./AWSIcon.svg";
+import AnsibleIcon from "./AnsibleIcon.svg";
+import BashIcon from "./BashIcon.svg";
+import CICDIcon from "./CICD.png";
+import DockerIcon from "./DockerIcon.svg";
+import GitlabIcon from "./GitlabIcon.svg";
+import JenkinsIcon from "./Jenkinsicon.svg";
+import KubernetesIcon from "./KubernetesIcon.svg";
+import LogAnalysisIcon from "./LogAnalysis.svg";
+import PythonIcon from "./PythonIcon.svg";
+import RCAIcon from "./RCAIcon.png";
+import SCAIcon from "./SCAIcon";
+import SystemMonitoringIcon from "./SystemMonitoring.svg";
+import TerraformIcon from "./TerraformIcon.svg";
+import WorkflowAutomationIcon from "./WorkflowAutomation.svg";
+import XMLIcon from "./XMLIcon.svg";
+import YAMLIcon from "./YAMLIcon.svg";
+import PostgreSQL from "./Postgresql.svg";
+import HelmIcon from "./HelmIcon.svg";
+import PrometheusIcon from "./PrometheusIcon.svg";
+import GrafanaIcon from "./Grafana.svg";
 
 export {close,menu,Sign};
 
 export { PassportImage, Arcane, Dapp, GithubIcon };
 export const aboutMe = {
     name: "Sashwat Pashpulate",
-    tagLine: "DevOps Engineer | Linux • Automation • CI/CD • Infrastructure as Code",
-    intro: "Software Engineer with expertise in Linux systems, production troubleshooting, workflow automation, and Static Code Analysis. Experienced in building internal engineering tools, investigating enterprise-scale production issues, and improving developer productivity through automation, scripting, and modern DevOps practices.",
+    tagLine: "DevOps Engineer | Kubernetes • Docker • Terraform • AWS | CI/CD",
+    intro: "DevOps Engineer focused on building reliable, scalable, and automated infrastructure using Docker, Kubernetes, Terraform, AWS, and CI/CD pipelines. Experienced in Linux systems, production troubleshooting, automation, and Static Code Analysis, with a strong focus on improving software delivery, system reliability, and developer productivity through Infrastructure as Code and modern DevOps practices.",
     signature: "Made with 💙 by Sashwat Pashpulate"
 }
 export const resumeLink = "https://drive.usercontent.google.com/download?id=1wvXYuCVQcicZZu1yMOmARbfdpCChxVar&export=download";
@@ -96,7 +119,7 @@ export const educationList = [
         { id: "core6", icon: HtmlIcon, name: "HTML" },
         { id: "core7", icon: CssIcon, name: "CSS" },
         { id: "core8", icon: SQLIcon, name: "SQL" },
-        { id: "core9", icon: null, name: "PostgreSQL" }
+        { id: "core9", icon: PostgreSQL, name: "PostgreSQL" }
       ]
     },
     {
@@ -104,40 +127,41 @@ export const educationList = [
       skills: [
         { id: "dev1", icon: GitIcon, name: "Git" },
         { id: "dev2", icon: GithubIcon, name: "GitHub" },
-        { id: "dev3", icon: null, name: "GitLab" },
-        { id: "dev4", icon: null, name: "Docker" },
-        { id: "dev5", icon: null, name: "Kubernetes" },
-        { id: "dev6", icon: null, name: "Jenkins" },
-        { id: "dev7", icon: null, name: "CI/CD" },
-        { id: "dev8", icon: null, name: "Terraform" },
-        { id: "dev9", icon: null, name: "Ansible" },
-        { id: "dev10", icon: null, name: "AWS" },
-        { id: "dev11", icon: null, name: "YAML" }
+        { id: "dev3", icon: GitlabIcon, name: "GitLab" },
+        { id: "dev4", icon: DockerIcon, name: "Docker" },
+        { id: "dev5", icon: KubernetesIcon, name: "Kubernetes" },
+        { id: "dev6", icon: HelmIcon, name: "Helm" },
+        { id: "dev7", icon: JenkinsIcon, name: "Jenkins" },
+        { id: "dev8", icon: TerraformIcon, name: "Terraform" },
+        { id: "dev9", icon: AnsibleIcon, name: "Ansible" },
+        { id: "dev10", icon: AWSIcon, name: "AWS" },
+        { id: "dev11", icon: YAMLIcon, name: "YAML" },
+        { id: "dev12", icon: CICDIcon, name: "CI/CD" }
       ]
     },
     {
       category: "Systems Engineering & Troubleshooting",
       skills: [
         { id: "sys1", icon: LinuxIcon, name: "Linux" },
-        { id: "sys2", icon: null, name: "XML" },
-        { id: "sys3", icon: null, name: "API Debugging" },
-        { id: "sys4", icon: null, name: "Log Analysis" },
-        { id: "sys5", icon: null, name: "Root Cause Analysis" },
-        { id: "sys6", icon: null, name: "Static Code Analysis" }
+        { id: "sys2", icon: APIIcon, name: "REST APIs" },
+        { id: "sys3", icon: XMLIcon, name: "XML" },
+        { id: "sys4", icon: APIDebuggingIcon, name: "API Debugging" },
+        { id: "sys5", icon: LogAnalysisIcon, name: "Log Analysis" },
+        { id: "sys6", icon: RCAIcon, name: "Root Cause Analysis" },
+        { id: "sys7", icon: SCAIcon, name: "Static Code Analysis" }
       ]
     },
     {
-      category: "Automation & Operations",
+      category: "Automation & Observability",
       skills: [
-        { id: "auto1", icon: null, name: "Bash" },
+        { id: "auto1", icon: BashIcon, name: "Bash" },
         { id: "auto2", icon: ConsoleIcon, name: "Shell Scripting" },
-        { id: "auto3", icon: null, name: "Python" },
+        { id: "auto3", icon: PythonIcon, name: "Python" },
         { id: "auto4", icon: PerlIcon, name: "Perl" },
-        { id: "auto5", icon: null, name: "Workflow Automation" },
-        { id: "auto6", icon: null, name: "Internal Tooling" },
-        { id: "auto7", icon: null, name: "System Monitoring" },
-        { id: "auto8", icon: null, name: "Production Diagnostics" },
-        { id: "auto9", icon: null, name: "Process Automation" }
+        { id: "auto5", icon: WorkflowAutomationIcon, name: "Workflow Automation" },
+        { id: "auto6", icon: SystemMonitoringIcon, name: "System Monitoring" },
+        { id: "auto7", icon: PrometheusIcon, name: "Prometheus" },
+        { id: "auto8", icon: GrafanaIcon, name: "Grafana" },
       ]
     }
   ];
