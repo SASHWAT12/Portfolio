@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import "./Stylings/Projects.css";
 
 const Project = (props) => {
+  const maxVisible = 6;
+  const visibleStack = props.stack.slice(0, maxVisible);
+  const hiddenStack = props.stack.slice(maxVisible);
+
   return (
     <motion.div
       className="project-card"
@@ -23,16 +27,23 @@ const Project = (props) => {
           <p className="project-tech">Tech Stack</p>
           <div className="project-stack">
             <div className="stack-icons">
-              {props.stack.map((tech, index) => (
+              {visibleStack.map((tech) => (
                 <div
                   key={tech.id}
                   className="stack-icon tooltip"
                 >
-                  {/* Render SVG as an <img> */}
                   <img src={tech.icon} alt={tech.name} className="tech-icon" />
                   <span className="tooltip-text">{tech.name}</span>
                 </div>
               ))}
+              {hiddenStack.length > 0 && (
+                <div className="stack-icon tooltip more-badge">
+                  <span>+{hiddenStack.length}</span>
+                  <span className="tooltip-text">
+                    {hiddenStack.map((tech) => tech.name).join(", ")}
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -100,6 +100,36 @@
   margin-top: 1rem;
 }
 
+/* Progressive disclosure badge */
+.more-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #252525;
+  color: #ccc;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #444;
+  transition: all 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.more-badge:hover {
+  background: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.more-badge .tooltip-text {
+  white-space: normal;
+  min-width: 150px;
+  max-width: 250px;
+  line-height: 1.4;
+}
+
 /* Stack icons */
 .stack-icons {
   display: flex;

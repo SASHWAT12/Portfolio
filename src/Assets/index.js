@@ -22,9 +22,9 @@ import SmartbridgeIcon from "./SmartbridgeIcon.jpeg";
 import PerforceIcon from "./Perforce_logo.png";
 import Arcane from "./Arcane.jpg";
 import Dapp from "./Dapp.png";
-import TruffleIcon from "./TruffleIcon.png";
-import GanacheIcon from "./GanacheIcon.png";
-import MetamaskIcon from "./MetamaskIcon.svg";
+// import TruffleIcon from "./TruffleIcon.png";
+// import GanacheIcon from "./GanacheIcon.png";
+// import MetamaskIcon from "./MetamaskIcon.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
 import Sign from "./Sign.svg";
@@ -51,6 +51,9 @@ import PostgreSQL from "./Postgresql.svg";
 import HelmIcon from "./HelmIcon.svg";
 import PrometheusIcon from "./PrometheusIcon.svg";
 import GrafanaIcon from "./Grafana.svg";
+import ArgoCDIcon from "./ArgoCDIcon.svg";
+import GitHubActionsIcon from "./GitHubActionsIcon.svg";
+import OpenTelemetryIcon from "./OpenTelemetryIcon.svg";
 
 export {close,menu,Sign};
 
@@ -176,14 +179,14 @@ export const educationList = [
       positions: [
         {
           title: "Software Engineer",
-          duration: "Aug 2025 – Present",
+          duration: "Aug 2025 - Present",
           content: [
             {
               text: "Led Static Code Analysis investigations resolving customer issues, identifying root causes, resolving false positives, and partnering with engineering to validate fixes and improve product quality.",
               link: ""
             },
             {
-              text: "Designed a one-click False Positive Reproduction framework that reduced investigation time from 2–4 hours to under 5 minutes while standardizing issue validation and improving engineering efficiency.",
+              text: "Designed a one-click False Positive Reproduction framework that reduced investigation time from 2-4 hours to under 5 minutes while standardizing issue validation and improving engineering efficiency.",
               link: ""
             },
             {
@@ -204,7 +207,7 @@ export const educationList = [
       link: "https://www.vodafone.com/careers/professional-career-areas/shared-services",
       positions: [
         {
-          title: "Technical Support Engineer",
+          title: "Site Reliability Engineer",
           duration: "Aug 2022 - May 2025",
           content: [
             {
@@ -325,355 +328,152 @@ export const educationList = [
 
 
   export const projects = [
-    {
-      id: "project-1",
-      title: "ARC E-Commerce",
-      github: "https://github.com/SASHWAT12/ARC-Ecommerce",
-      link: "",
-      image: Arcane,
-      content:
-        "Developed a full-stack e-commerce website inspired by League of Legends, leveraging HTML, CSS, JavaScript, Node.js, and MySQL to deliver a dynamic and responsive user experience.",
-      stack: [
-        {
-          id: "icon-1",
-          icon: HtmlIcon,
-          name: "HTML"
-        },
-        {
-          id: "icon-2",
-          icon: CssIcon,
-          name: "CSS"
-        },
-        {
-          id: "icon-3",
-          icon: JavascriptIcon,
-          name: "JavaScript"
-        },
-        {
-          id: "icon-4",
-          icon: NodeJsIcon,
-          name: "Node.js"
-        },
-        {
-          id: "icon-5",
-          icon: SQLIcon,
-          name: "MySQL"
-        },
-      ],
-    },
-    {
-      id: "project-2",
-      title: "ElectionVoteDapp",
-      github: "https://github.com/SASHWAT12/ElectionVoteDapp",
-      link: "",
-      image: Dapp,
-      content:
-        "Built a secure and user-friendly decentralized voting app (DApp) using Ethereum smart contracts, Truffle, Ganache, and Metamask.",
-      stack: [
-        {
-          id: "icon-1",
-          icon: TruffleIcon,
-          name: "Truffle"
-        },
-        {
-          id: "icon-2",
-          icon: GanacheIcon,
-          name: "Ganache"
-        },
-        {
-          id: "icon-3",
-          icon: MetamaskIcon,
-          name: "MetaMask"
-        },
-        {
-          id: "icon-4",
-          icon: NodeJsIcon,
-          name: "Node.js"
-        },
-        {
-          id: "icon-5",
-          icon: JavascriptIcon,
-          name: "Javascript"
-        },
-        {
-          id: "icon-6",
-          icon: HtmlIcon,
-          name: "HTML"
-        },
-        {
-          id: "icon-7",
-          icon: CssIcon,
-          name: "CSS"
-        },
-      ],
-    },
     // {
-    //   id: "project-3",
-    //   title: "ChargeSwap",
-    //   github: "https://github.com/CommanderAstern/ChargeSwap",
-    //   link: "https://devfolio.co/projects/chargeswap-3527",
-    //   image: ReactIcon,
+    //   id: "project-1",
+    //   title: "ARC E-Commerce",
+    //   github: "https://github.com/SASHWAT12/ARC-Ecommerce",
+    //   link: "",
+    //   image: Arcane,
     //   content:
-    //     "A Blockchain-based EV-Battery swapping solution - winning project at ETHIndia'22, the world's largest Ethereum Hackathon",
+    //     "Developed a full-stack e-commerce website inspired by League of Legends, leveraging HTML, CSS, JavaScript, Node.js, and MySQL to deliver a dynamic and responsive user experience.",
     //   stack: [
     //     {
     //       id: "icon-1",
-    //       icon: ReactIcon,
-    //       name: "React"
+    //       icon: HtmlIcon,
+    //       name: "HTML"
+    //     },
+    //     {
+    //       id: "icon-2",
+    //       icon: CssIcon,
+    //       name: "CSS"
     //     },
     //     {
     //       id: "icon-3",
-    //       icon: ReactIcon,
-    //       name: "Web3.js"
+    //       icon: JavascriptIcon,
+    //       name: "JavaScript"
     //     },
     //     {
     //       id: "icon-4",
-    //       icon: ReactIcon,
-    //       name: "Solidity"
+    //       icon: NodeJsIcon,
+    //       name: "Node.js"
     //     },
     //     {
     //       id: "icon-5",
-    //       icon: ReactIcon,
-    //       name: "HardHat"
+    //       icon: SQLIcon,
+    //       name: "MySQL"
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: "project-2",
+    //   title: "ElectionVoteDapp",
+    //   github: "https://github.com/SASHWAT12/ElectionVoteDapp",
+    //   link: "",
+    //   image: Dapp,
+    //   content:
+    //     "Built a secure and user-friendly decentralized voting app (DApp) using Ethereum smart contracts, Truffle, Ganache, and Metamask.",
+    //   stack: [
+    //     {
+    //       id: "icon-1",
+    //       icon: TruffleIcon,
+    //       name: "Truffle"
+    //     },
+    //     {
+    //       id: "icon-2",
+    //       icon: GanacheIcon,
+    //       name: "Ganache"
+    //     },
+    //     {
+    //       id: "icon-3",
+    //       icon: MetamaskIcon,
+    //       name: "MetaMask"
+    //     },
+    //     {
+    //       id: "icon-4",
+    //       icon: NodeJsIcon,
+    //       name: "Node.js"
+    //     },
+    //     {
+    //       id: "icon-5",
+    //       icon: JavascriptIcon,
+    //       name: "Javascript"
     //     },
     //     {
     //       id: "icon-6",
-    //       icon: ReactIcon,
-    //       name: "IPFS"
+    //       icon: HtmlIcon,
+    //       name: "HTML"
     //     },
     //     {
     //       id: "icon-7",
-    //       icon: ReactIcon,
-    //       name: "Arduino"
-    //     },
-    //     {
-    //       id: "icon-8",
-    //       icon: ReactIcon,
-    //       name: "Push Protocol"
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "project-4",
-    //   title: "Samsotech Table Management System",
-    //   github: "",
-    //   link: "https://www.linkedin.com/posts/mittal-parth_technologysolutions-softwaredevelopment-technology-activity-6994915645066809344-WnMY?utm_source=share&utm_medium=member_desktop",
-    //   image: ReactIcon,
-    //   content:
-    //     "Restaurant, Place, Table and realtime Reservation Management with Multi-Tenant Architecture, RBAC, SMS and Email integration for Samsotech International",
-    //   stack: [
-    //     {
-    //       id: "icon-1",
-    //       icon: ReactIcon,
-    //       name: "Dot Net Core MVC 6"
-    //     },
-    //     {
-    //       id: "icon-2",
-    //       icon: ReactIcon,
-    //       name: "Bootstrap"
-    //     },
-    //     {
-    //       id: "icon-3",
-    //       icon: ReactIcon,
-    //       name: "MS Sql Server"
-    //     },
-    //     {
-    //       id: "icon-4",
-    //       icon: ReactIcon,
-    //       name: "jQuery"
-    //     },
-    //     {
-    //       id: "icon-5",
-    //       icon: ReactIcon,
-    //       name: "Twillio"
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "project-5",
-    //   title: "Non-Teaching Recruitment Portal, NITK",
-    //   github: "",
-    //   link: "http://recruitment.nitk.ac.in/",
-    //   image: recruitment,
-    //   content:
-    //     "The official recruitment portal for non-teaching staff with an admin panel, email notifications and payment integration.",
-    //   stack: [
-    //     {
-    //       id: "icon-1",
-    //       icon: SiRubyonrails,
-    //       name: "Ruby on Rails"
-    //     },
-    //     {
-    //       id: "icon-2",
-    //       icon: SiTailwindcss,
-    //       name: "TailwindCSS"
-    //     },
-    //     {
-    //       id: "icon-3",
-    //       icon: SiJquery,
-    //       name: "jQuery"
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "project-6",
-    //   title: "Career Development Centre, NITK Website",
-    //   github: "",
-    //   link: "http://cdc.nitk.ac.in/",
-    //   image: cdc,
-    //   content:
-    //     "The official website of CDC, NITK with a custom built CMS.",
-    //   stack: [
-    //     {
-    //       id: "icon-1",
-    //       icon: SiRubyonrails,
-    //       name: "Ruby on Rails"
-    //     },
-    //     {
-    //       id: "icon-2",
-    //       icon: SiBootstrap,
-    //       name: "Bootstrap"
-    //     },
-    //     {
-    //       id: "icon-3",
-    //       icon: SiJavascript,
-    //       name: "JavaScript"
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "project-7",
-    //   title: "Huntly",
-    //   github: "",
-    //   link: "https://devfolio.co/projects/huntly-b5a9",
-    //   image: huntly,
-    //   content:
-    //     "A cross-platform mobile application that brings people closer to the physical environment and forms meaningful connections by organising real-world Treasure Hunts for free and winning rewards. The app uses machine learning to match users and form teams of like-minded people.",
-    //   stack: [
-    //     {
-    //       id: "icon-1",
-    //       icon: SiDjango,
-    //       name: "Django Rest Framework"
-    //     },
-    //     {
-    //       id: "icon-2",
-    //       icon: SiFlutter,
-    //       name: "Flutter"
-    //     },
-    //     {
-    //       id: "icon-3",
-    //       icon: SiReplit,
-    //       name: "Replit"
-    //     },
-    //     {
-    //       id: "icon-4",
-    //       icon: SiFlask,
-    //       name: "Flask"
-    //     },
-    //     {
-    //       id: "icon-5",
-    //       icon: SiFigma,
-    //       name: "Figma"
-    //     },
-    //     {
-    //       id: "icon-6",
-    //       icon: SiGooglemaps,
-    //       name: "Google Maps API"
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "project-8",
-    //   title: "Cluboard",
-    //   github: "https://github.com/mittal-parth/Cluboard",
-    //   link: "",
-    //   image: cluboard,
-    //   content:
-    //     "A full-stack web application to facilitate sharing resources in college clubs with email notifications, requests and ticketing system, and analytical dashboards.",
-    //   stack: [
-    //     {
-    //       id: "icon-1",
-    //       icon: SiDjango,
-    //       name: "Django"
-    //     },
-    //     {
-    //       id: "icon-2",
-    //       icon: AiFillHtml5,
-    //       name: "HTML"
-    //     },
-    //     {
-    //       id: "icon-3",
-    //       icon: DiCss3,
+    //       icon: CssIcon,
     //       name: "CSS"
     //     },
-    //     {
-    //       id: "icon-4",
-    //       icon: SiJavascript,
-    //       name: "JavaScript"
-    //     },
-    //     {
-    //       id: "icon-5",
-    //       icon: SiBootstrap,
-    //       name: "Bootstrap"
-    //     },
-    //     {
-    //       id: "icon-6",
-    //       icon: SiChartdotjs,
-    //       name: "Chart.js"
-    //     },
     //   ],
     // },
-    // {
-    //   id: "project-9",
-    //   title: "Cash Flow Minimiser",
-    //   github: "https://github.com/mittal-parth/Cash-Flow-Minmiser",
-    //   link: "https://minimise-cash-flow.netlify.app/",
-    //   image: cash_flow,
-    //   content:
-    //     "A React application to help users visualise and minimise cash flow among multiple transactions.",
-    //   stack: [
-    //     {
-    //       id: "icon-1",
-    //       icon: SiReact,
-    //       name: "React"
-    //     },
-    //     {
-    //       id: "icon-2",
-    //       icon: AiFillHtml5,
-    //       name: "HTML"
-    //     },
-    //     {
-    //       id: "icon-3",
-    //       icon: DiCss3,
-    //       name: "CSS"
-    //     }
-    //   ],
-    // },
-    // {
-    //   id: "project-10",
-    //   title: "Portfolio",
-    //   github: "https://github.com/mittal-parth/personal-portfolio",
-    //   link: "https://parthmittal.netlify.app/",
-    //   image: portfolio,
-    //   content: "Personal portfolio website with React and Tailwind CSS.",
-    //   stack: [
-    //     {
-    //       id: "icon-1",
-    //       icon: SiReact,
-    //       name: "React"
-    //     },
-    //     {
-    //       id: "icon-2",
-    //       icon: SiTailwindcss,
-    //       name: "Tailwind CSS"
-    //     },
-    //     {
-    //       id: "icon-3",
-    //       icon: AiFillHtml5,
-    //       name: "HTML"
-    //     },
-    //   ],
-    // },
+    {
+      id: "project-devops-1",
+      title: "ReleaseRail",
+      github: "",
+      link: "",
+      image: Arcane,
+      category: "GitOps Release Platform",
+      content:
+        "A GitOps-powered Release Engineering Platform that automates software promotion from pull request to production with CI/CD validation, policy enforcement, progressive deployments, automated rollback, security scanning, release traceability, and production observability.",
+      stack: [
+        { id: "rr-icon-4", icon: KubernetesIcon, name: "Kubernetes" },
+        { id: "rr-icon-3", icon: ArgoCDIcon, name: "Argo CD" },
+        { id: "rr-icon-2", icon: GitHubActionsIcon, name: "GitHub Actions" },
+        { id: "rr-icon-6", icon: TerraformIcon, name: "Terraform" },
+        { id: "rr-icon-7", icon: HelmIcon, name: "Helm" },
+        { id: "rr-icon-8", icon: PrometheusIcon, name: "Prometheus" },
+        { id: "rr-icon-9", icon: GrafanaIcon, name: "Grafana" },
+        { id: "rr-icon-1", icon: GitIcon, name: "Git" },
+        { id: "rr-icon-5", icon: DockerIcon, name: "Docker" },
+        { id: "rr-icon-10", icon: BashIcon, name: "Bash" },
+        { id: "rr-icon-11", icon: YAMLIcon, name: "YAML" }
+      ]
+    },
+    {
+      id: "project-devops-2",
+      title: "IncidentLens AI",
+      github: "",
+      link: "",
+      image: Dapp,
+      category: "AI Incident Copilot",
+      content:
+        "An AI-powered Incident Copilot that correlates logs, metrics, traces, Kubernetes events, deployment history, and Git changes into a unified operational context to assist root cause analysis, recommend remediation, generate incident timelines, and draft postmortems.",
+      stack: [
+        { id: "il-icon-1", icon: KubernetesIcon, name: "Kubernetes" },
+        { id: "il-icon-2", icon: OpenTelemetryIcon, name: "OpenTelemetry" },
+        { id: "il-icon-3", icon: PrometheusIcon, name: "Prometheus" },
+        { id: "il-icon-4", icon: GrafanaIcon, name: "Grafana" },
+        { id: "il-icon-5", icon: PythonIcon, name: "Python" },
+        { id: "il-icon-6", icon: DockerIcon, name: "Docker" }
+      ]
+    },
+    {
+      id: "project-devops-3",
+      title: "EnvForge",
+      github: "",
+      link: "",
+      image: Arcane,
+      category: "Self-Service Environment Platform",
+      content:
+        "A self-service Environment Provisioning Platform that enables developers to provision secure, production-like environments on demand using Infrastructure as Code, GitOps workflows, automated secrets management, integrated monitoring, and lifecycle automation.",
+      stack: [
+        { id: "ef-icon-4", icon: KubernetesIcon, name: "Kubernetes" },
+        { id: "ef-icon-5", icon: TerraformIcon, name: "Terraform" },
+        { id: "ef-icon-3", icon: ArgoCDIcon, name: "Argo CD" },
+        { id: "ef-icon-6", icon: HelmIcon, name: "Helm" },
+        { id: "ef-icon-8", icon: AWSIcon, name: "AWS" },
+        { id: "ef-icon-2", icon: GitHubActionsIcon, name: "GitHub Actions" },
+        { id: "ef-icon-1", icon: GitIcon, name: "Git" },
+        { id: "ef-icon-7", icon: DockerIcon, name: "Docker" },
+        { id: "ef-icon-9", icon: PrometheusIcon, name: "Prometheus" },
+        { id: "ef-icon-10", icon: GrafanaIcon, name: "Grafana" },
+        { id: "ef-icon-11", icon: YAMLIcon, name: "YAML" }
+      ]
+    },
   ];
 
   export const navLinks = [
